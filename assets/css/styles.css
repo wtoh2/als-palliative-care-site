@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap");
+
+body { 
+    margin: 0; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+/* ===== Header ===== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #ffffff;
+  border-bottom: none;              /* remove the line */
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.45rem 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left side */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-logo {
+  height: 36px;
+  width: auto;
+}
+
+.site-title {
+  font-size: 1.15rem;
+  color: #002d62;
+}
+
+.title-accent {
+  color: #7fa6d9; 
+}
+
+/* Right side */
+.header-right a {
+  font-size: 1.05rem;
+  padding: 0.35rem 0.9rem;
+  background: #eef2f7;
+
+  color: #002d62;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+
+.header-right a:focus,
+.header-right a:active,
+.hero-btn:focus,
+.hero-btn:active {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* Focus states (keyboard / eye gaze) */
+.header-right a:focus,
+.header-right a:hover {
+  border-color: #002d62;
+}
+
+.access-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.access-icon {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+/* ===== Main Page ===== */
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: minmax(720px, 2.2fr) 0.8fr; 
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Outlined hero headline */
+.hero-title-outline {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  max-width: 47rem;
+
+  color: #ffffff;
+  -webkit-text-stroke: 2px #0a2a5e;
+
+  text-shadow:
+    0.5px 0.5px 0 #0a2a5e,
+    -3px -3px 0 #9fc1eb,
+    1px 1px 0 rgba(0,0,0,0.15);
+
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+/* Supporting text */
+.hero p {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.3rem;
+  max-width: 47rem;
+  line-height: 1.6;
+
+  color: #1f2937;
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 2rem;
+}
+
+.hero p .emphasis {
+  font-weight: 600;
+  color: #1b78ea;
+}
+
+/* CTA button */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.2rem;          /* ⬆ bigger text */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  padding: 1.35rem 2.75rem;   /* ⬆ much bigger click area */
+  border-radius: 0.3rem;     /* slightly rounder looks better at scale */
+
+  border: 3px solid #0a2a5e;
+  background: transparent;
+  color: #0a2a5e;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  background: #0a2a5e;
+  color: #ffffff;
+}
+
+.hero-btn:focus {
+  outline: 3px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img {
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-visual img {
+    max-height: 200px;
+  }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: #0a2a5e;
+  padding: 0.75rem 1rem;
+}
+
+.site-footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+}

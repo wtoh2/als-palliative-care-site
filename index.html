@@ -6,17 +6,76 @@
   <title>ALS Care Resources</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
-  <main>
-    <section>
-      <h2>Support for Patients and Caregivers</h2>
-      <p>
-        Clear, accessible resources curated by clinicians.
-      </p>
 
-      <button id="start-btn">Get Started</button>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+        <!-- Left: logo + title -->
+        <div class="header-left">
+        <img
+            src="assets/images/INPCS_Logo.png"
+            alt="INPCS Society ogo"
+            class="site-logo"
+        />
+        <span class="site-title">
+            ALS <span class="title-accent">PALLIATIVE CARE</span> RESOURCE GUIDE 
+        </span>
+        </div>
+
+        <!-- Right: accessibility -->
+        <nav class="header-right">
+            <a href="accessibility.html" class="access-link">
+            <img
+                src="assets/images/AI_EyeTracker.png"
+                alt=""
+                aria-hidden="true"
+                class="access-icon"
+            />
+            <span>ACCESSIBILITY / USING THIS SITE</span>
+            </a>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title-outline">
+        Living Fully, Living Well
+        </h1>
+
+        <p>
+        Welcome! This website was developed by a clinician-led team affiliated with Johns Hopkins, 
+        in partnership with experts from the International Neuropalliative Care Society
+        (INPCS) ALS Working Group, 
+        with the goal of providing a <strong class="emphasis">centralized, accessible, and clinician-curated</strong> ALS palliative care resource 
+        navigator. To get started, click on a button below.
+        </p>
+
+        <div class="hero-actions">
+        <a href="start.html" class="hero-btn">
+            Get Started
+        </a>
+
+        <a href="resources.html" class="hero-btn">
+            Full Resource List
+        </a>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <img
+        src="assets/images/AI_ALS_Ribbon_V4.png"
+        alt="ALS awareness blue ribbon"
+        />
+    </div>
     </section>
   </main>
+  <footer class="site-footer">
+  <p>
+    This website is not an official Johns Hopkins University website and does not
+    represent institutional policy. © 2025.
+  </p>
+  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
