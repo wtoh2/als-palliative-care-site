@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALS Care Resources</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+        <!-- Left: logo + title -->
+        <div class="header-left">
+        <img
+            src="assets/images/INPCS_Logo.png"
+            alt="INPCS Society ogo"
+            class="site-logo"
+        />
+        <span class="site-title">
+            ALS <span class="title-accent">PALLIATIVE CARE</span> RESOURCE GUIDE 
+        </span>
+    </div>
+    <!-- CENTER: Scroll Up -->
+    <div class="header-center">
+        <button class="scroll-btn" id="scroll-up" aria-label="Scroll up">
+        ▲
+        </button>
+    </div>
+    <!-- Right: accessibility -->
+    <nav class="header-right">
+        <a href="accessibility.html" class="access-link">
+        <img
+            src="assets/images/AI_EyeTracker.png"
+            alt=""
+            aria-hidden="true"
+            class="access-icon"
+        />
+        <span>ACCESSIBILITY / USING THIS SITE</span>
+        </a>
+    </nav>
+  </div>
+  </header>
+    <button
+    class="back-btn fixed-back"
+    aria-label="Go back"
+    onclick="history.back()"
+    >
+    <span class="back-text">Back</span>
+    <span class="back-arrow">←</span>
+    </button>
+  <main>
+    <aside class="filters filters-left">
+    <h2 class="filters-title">Filter By Category:</h2>
+    <div class="filter-options vertical" id="category-filters"></div>
+    </aside>
+
+    <section class="resources">
+    <header class="resources-header">
+        <h1 class="resources-title">All Resources</h1>
+        <p class="resources-subtitle">Sorted alphabetically by title</p>
+    </header>
+
+    <div id="resources-list"></div>
+    </section>
+
+    <!-- Scroll Down Button -->
+    <button class="scroll-btn fixed" id = "scroll-down" aria-label="Scroll down">
+    ▼
+    </button>
+  </main>
+  <footer class="site-footer">
+  <p>
+    This website is not an official Johns Hopkins University website and does not
+    represent institutional policy. © 2025.
+  </p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

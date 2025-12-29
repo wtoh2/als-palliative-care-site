@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap");
 
-body { 
-    margin: 0; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  flex: 1;
 }
 
 /* ===== Header ===== */
@@ -25,6 +37,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-inner {
+  position: relative; /* anchor for absolute centering */
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Left side */
@@ -111,7 +133,7 @@ body {
 
   text-shadow:
     0.5px 0.5px 0 #0a2a5e,
-    -3px -3px 0 #9fc1eb,
+    -4px 4px 0 #9fc1eb,
     1px 1px 0 rgba(0,0,0,0.15);
 
   margin: 0;
@@ -126,8 +148,8 @@ body {
   line-height: 1.6;
 
   color: #1f2937;
-  text-align: justify;
-  hyphens: auto;
+  
+  hyphens: none;
   margin-bottom: 2rem;
 }
 
@@ -221,3 +243,319 @@ body {
   color: #ffffff;
   font-family: "Inter", system-ui, sans-serif;
 }
+
+/* ===== Scroll Buttons ===== */
+.scroll-btn {
+  display: block;
+  margin: 0.2rem auto;
+
+  width: 150px;
+  height: 50px;
+
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+
+  border-radius: 8px;
+  border: 3px solid #0a2a5e;
+  background: #0a2a5e;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+/* Hover */
+.scroll-btn:hover {
+  background: #759fe7;
+}
+
+/* Focus / active (same yellow effect you like) */
+.scroll-btn:focus,
+.scroll-btn:active {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* Fixed scroll-down button */
+.scroll-btn.fixed {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 900;
+}
+
+/* ===== Resource Section ===== */
+.resources {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.resource-section-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+  color: #0a2a5e;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Resource Cards ===== */
+
+.resources {
+  max-width: 55%;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+#resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; 
+}
+
+/* Whole card is clickable */
+.resource-card {
+  display: block;
+  padding: 0.6rem 1rem;
+  position: relative; /* REQUIRED for dashed line */
+  background: #ffffff;
+  border: 2px solid #0a2a5e;
+
+  text-decoration: none;
+  color: #0a2a5e;
+
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+/* Dashed divider between meta and title (no layout impact) */
+.resource-card::before {
+  content: "";
+  position: absolute;
+
+  left: 1rem;
+  right: 1rem;
+  top: 2.15rem; /* sits in existing whitespace */
+
+  border-top: 1.5px dashed rgba(10, 42, 94, 0.35);
+  pointer-events: none;
+}
+
+/* Hover = light blue */
+.resource-card:hover {
+  background: #eef4ff;
+}
+
+/* Focus (keyboard / eye-gaze) = yellow ring */
+.resource-card:focus-visible {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+.resource-card:active {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+  transform: translateY(-3px);
+}
+
+/* Card typography */
+.resource-card h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.resource-card p {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #1f2937;
+}
+
+/* Responsive: widen cards on smaller screens */
+@media (max-width: 900px) {
+  .resources {
+    max-width: 85%;
+  }
+}
+
+/* Meta row */
+.resource-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.resource-source {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0a2a5e;
+}
+
+.resource-type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+
+  background: #eef4ff;
+  color: #0a2a5e;
+  border: none;
+}
+
+/* ===== Resources Header ===== */
+
+.resources-header {
+  margin-bottom: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 2.5px solid rgba(10, 42, 94, 0.12);
+}
+
+.resources-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a2a5e;
+  margin: 0;
+}
+
+.resources-subtitle {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #4b5563;
+  margin: 0.1rem 0 0;
+}
+
+/* ===== Category Filters (Fixed Left Rail – NO SQUISHING) ===== */
+
+.filters {
+  position: fixed;
+  top: 9.5rem;     /* aligns visually with first card */
+  left: 2rem;      /* sits in unused page margin */
+  width: 200px;
+  z-index: 800;
+}
+
+.filters-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #0a2a5e;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.filter-options.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-btn {
+  width: 100%;
+  text-align: left;
+
+  padding: 0.9rem 1rem;   /* ⬆ increases button height */
+  min-height: 60px;       /* ⬆ guarantees large target */
+
+  background: #ffffff;
+  border: 2px solid #0a2a5e;
+  border-radius: 6px;
+  color: #0a2a5e;
+
+  font-size: 0.9rem;        /* optional: improves legibility */
+}
+
+.filter-btn:hover {
+  background: #eef4ff;
+}
+
+.filter-btn.active {
+  background: #eef4ff;                 /* soft highlight */
+  color: #0a2a5e;
+
+  border-left: 10px solid #0a2a5e;       /* selection indicator */
+  padding-left: calc(1rem - 4px);      /* keeps text aligned */
+}
+
+.filter-btn {
+  transition: background-color 0.15s ease, border-left 0.15s ease;
+}
+
+.filter-btn:focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* ===== Mobile / Tablet Safety ===== */
+@media (max-width: 1100px) {
+  .filters {
+    position: static;
+    width: auto;
+    margin: 1.5rem auto;
+  }
+}
+
+
+
+/* ===== Back Button ===== */
+.back-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 70px;
+
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+
+  border-radius: 8px;
+  border: 3px solid #0a2a5e;
+  background: #0a2a5e;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+/* Text + arrow sizing */
+.back-text {
+  font-family: "Inter", system-ui, sans-serif; /* NOT Archivo Black */
+  font-size: 1.2rem;
+  font-weight: 400;           /* normal */
+  letter-spacing: 0.05em;
+}
+
+.back-arrow {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+/* Hover (same as scroll buttons) */
+.back-btn:hover {
+  background: #759fe7;
+}
+
+/* Focus / active ring (same yellow) */
+.back-btn:focus,
+.back-btn:active {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* Fixed position */
+.fixed-back {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 900;
+}
+
