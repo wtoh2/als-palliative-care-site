@@ -8,7 +8,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -30,9 +29,9 @@ main {
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: 95%;
   margin: 0 auto;
-  padding: 0.45rem 1.25rem;
+  padding: 0.8rem clamp(1.25rem, 4vw, 3rem);
 
   display: flex;
   align-items: center;
@@ -110,9 +109,9 @@ main {
 
 /* ===== Main Page ===== */
 .hero {
-  max-width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3.5rem;
 
   display: grid;
   grid-template-columns: minmax(720px, 2.2fr) 0.8fr; 
@@ -123,10 +122,10 @@ main {
 /* Outlined hero headline */
 .hero-title-outline {
   font-family: "Archivo Black", sans-serif;
-  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-size: clamp(2.8rem, 4.8vw, 5.4rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
-  max-width: 47rem;
+  max-width: 95%;
 
   color: #ffffff;
   -webkit-text-stroke: 2px #0a2a5e;
@@ -143,8 +142,8 @@ main {
 /* Supporting text */
 .hero p {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: 1.3rem;
-  max-width: 47rem;
+  font-size: clamp(1.3rem, 1.6vw, 1.6rem);
+  max-width: 90%;
   line-height: 1.6;
 
   color: #1f2937;
@@ -171,13 +170,14 @@ main {
   justify-content: center;
 
   font-family: "Archivo Black", sans-serif;
-  font-size: 1.2rem;          /* ⬆ bigger text */
+  font-size: clamp(1.2rem, 1.4vw, 1.55rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding: 1.35rem 2.75rem;   /* ⬆ much bigger click area */
-  border-radius: 0.3rem;     /* slightly rounder looks better at scale */
+  padding: clamp(1.2rem, 1.6vw, 1.6rem)
+           clamp(2.4rem, 3vw, 3.2rem);
 
+  border-radius: 0.3rem;
   border: 3px solid #0a2a5e;
   background: transparent;
   color: #0a2a5e;
@@ -211,7 +211,7 @@ main {
 
 .hero-visual img {
   max-width: 100%;
-  max-height: 500px;
+  max-height: clamp(480px, 35vw, 650px);
   height: auto;
   opacity: 0.95;
 }
@@ -439,7 +439,7 @@ main {
   position: fixed;
   top: 9.5rem;     /* aligns visually with first card */
   left: 2rem;      /* sits in unused page margin */
-  width: 200px;
+  width: clamp(180px, 16vw, 240px);
   z-index: 800;
 }
 
@@ -502,8 +502,6 @@ main {
   }
 }
 
-
-
 /* ===== Back Button ===== */
 .back-btn {
   display: flex;
@@ -554,8 +552,135 @@ main {
 /* Fixed position */
 .fixed-back {
   position: fixed;
-  bottom: 1rem;
+  bottom: 3.3rem;
   left: 1rem;
   z-index: 900;
+}
+
+/* ===== Get Started Flow ===== */
+
+.start-flow {
+  min-height: calc(90vh - 160px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: clamp(0.75rem, 2vh, 2.5rem);
+}
+
+/* Card container */
+.question-card {
+  width: min(820px, 85%);
+  text-align: center;
+}
+
+/* Header */
+.question-header {
+  margin-bottom: 1.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2.5px solid rgba(10, 42, 94, 0.12);
+}
+
+.question-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.2rem);
+  font-weight: 400;
+  color: #0a2a5e;
+  margin: 0;
+  margin-top: 0.6rem;
+}
+
+/* Button stack */
+.question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.55rem;
+  align-items: stretch;
+}
+
+/* ===== Choice Buttons (Icon-Free) ===== */
+
+.choice-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: clamp(1rem, 2vw, 1.5rem);
+  min-height: clamp(76px, 9vh, 110px);
+
+  background: #ffffff;               /* soft panel look */
+  border: 2px solid #002d62;
+  border-radius: 10px;
+
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 500;
+  color: #0a2a5e;
+  text-align: left;
+
+  box-shadow:
+    0 3.5px 0 rgba(10, 42, 94, 0.18);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.05s ease;
+}
+
+/* Hover */
+.choice-btn:hover {
+  background: #eef2f7;
+  box-shadow:
+    0 6px 0 rgba(10, 42, 94, 0.25);
+}
+
+/* Keyboard / eye-gaze focus */
+.choice-btn:focus-visible {
+  outline: 3px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+.choice-btn a:focus,
+.choice-btn a:active,
+.choice-btn:focus,
+.choice-btn:active {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* Active / click */
+.choice-btn:active {
+  transform: translateY(-3px);
+  box-shadow:
+    0 6px 0 rgba(10, 42, 94, 0.28);
+}
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  .choice-btn {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* ===== Progress Bar ===== */
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  margin-top: 1.2rem;
+
+  background: #e5ecf6; /* soft neutral blue */
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%; /* controlled by JS */
+
+  background: #4f8aea;
+  border-radius: 999px;
 }
 

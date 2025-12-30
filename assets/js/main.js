@@ -139,3 +139,104 @@ fetch("assets/data/resources.json")
     console.error("Error loading resources:", error);
   });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".question-card");
+  if (!cards.length) return; // only run on start.html
+
+  const buttons = document.querySelectorAll(".choice-btn");
+  function getActiveProgressBar() {
+    const activeCard = document.querySelector(".question-card.active");
+    if (!activeCard) return null;
+    return activeCard.querySelector(".progress-bar");
+  }
+
+  let currentStep = 1;
+  const totalSteps = cards.length;
+  const answers = {};
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".question-card");
+      const step = Number(card.dataset.step);
+      const answer = btn.dataset.answer;
+
+      answers[`step${step}`] = answer;
+
+      goToStep(step + 1);
+    });
+  });
+
+  function goToStep(nextStep) {
+    const current = document.querySelector(".question-card.active");
+    const next = document.querySelector(
+      `.question-card[data-step="${nextStep}"]`
+    );
+
+    if (!next) {
+      console.log("Done!", answers);
+      return;
+    }
+
+    current.classList.remove("active");
+    current.classList.add("hidden");
+    current.hidden = true;
+
+    next.hidden = false;
+    next.classList.remove("hidden");
+    next.classList.add("active");
+    next.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    currentStep = nextStep;
+    updateProgress();
+  }
+
+  function goBack() {
+    const current = document.querySelector(".question-card.active");
+    const prevStep = currentStep - 1;
+    const prev = document.querySelector(
+      `.question-card[data-step="${prevStep}"]`
+    );
+
+    if (!prev) return;
+
+    current.classList.remove("active");
+    current.hidden = true;
+
+    prev.hidden = false;
+    prev.classList.remove("hidden");
+    prev.classList.add("active");
+
+    currentStep = prevStep;
+    updateProgress();
+
+    prev.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  function updateProgress() {
+    const progressBar = getActiveProgressBar();
+    if (!progressBar) return;
+
+    const percent = ((currentStep - 1) / totalSteps) * 100;
+    progressBar.style.width = `${percent}%`;
+  }
+
+  const backBtn = document.querySelector(".fixed-back");
+
+  if (backBtn) {
+    backBtn.addEventListener("click", () => {
+      if (currentStep > 1) {
+        goBack();
+      } else {
+        window.history.back();
+      }
+    });
+  }
+
+  updateProgress();
+});
