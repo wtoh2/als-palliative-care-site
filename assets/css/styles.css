@@ -111,7 +111,7 @@ main {
 .hero {
   max-width: 90%;
   margin: 0 auto;
-  padding: 3.5rem;
+  padding: 1.0rem 3.5rem; /* ↓ vertical, keep horizontal */
 
   display: grid;
   grid-template-columns: minmax(720px, 2.2fr) 0.8fr; 
@@ -232,6 +232,7 @@ main {
 
 /* ===== Footer ===== */
 .site-footer {
+  margin-top: auto;
   background-color: #0a2a5e;
   padding: 0.75rem 1rem;
 }
@@ -419,7 +420,7 @@ main {
 
 .resources-title {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 1.8vw, 1.8rem);
   font-weight: 700;
   color: #0a2a5e;
   margin: 0;
@@ -437,17 +438,17 @@ main {
 
 .filters {
   position: fixed;
-  top: 9.5rem;     /* aligns visually with first card */
-  left: 2rem;      /* sits in unused page margin */
+  top: 7.5rem;     /* aligns visually with first card */
+  right: 2rem;      /* sits in unused page margin */
   width: clamp(180px, 16vw, 240px);
-  z-index: 800;
+  z-index: 1000;
 }
 
 .filters-title {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: #0a2a5e;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -560,40 +561,44 @@ main {
 /* ===== Get Started Flow ===== */
 
 .start-flow {
-  min-height: calc(90vh - 160px);
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  padding-top: clamp(0.75rem, 2vh, 2.5rem);
+  align-items: flex-start;
+
+  /* MASTER SCALE KNOB */
+  font-size: 0.92rem;
+
+  padding-top: clamp(0.25rem, 2.5vh, 1.6rem);
+  padding-bottom: 0.75rem;
 }
 
 /* Card container */
 .question-card {
-  width: min(820px, 85%);
+  width: min(760px, 85%);
   text-align: center;
 }
 
 /* Header */
 .question-header {
-  margin-bottom: 1.6rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2.5px solid rgba(10, 42, 94, 0.12);
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid rgba(10, 42, 94, 0.12);
 }
 
 .question-title {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(1.8rem, 2.6vw, 2.2rem);
-  font-weight: 400;
+  font-size: clamp(1.6rem, 2.4vw, 2.0rem);
+  font-weight: 650;
   color: #0a2a5e;
   margin: 0;
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
 }
 
 /* Button stack */
 .question-options {
   display: flex;
   flex-direction: column;
-  gap: 1.55rem;
+  gap: 1.3rem;
   align-items: stretch;
 }
 
@@ -604,21 +609,21 @@ main {
   align-items: center;
   justify-content: flex-start;
 
-  padding: clamp(1rem, 2vw, 1.5rem);
-  min-height: clamp(76px, 9vh, 110px);
+  padding: clamp(0.9rem, 1.8vw, 1.25rem);
+  min-height: clamp(64px, 8vh, 96px);
 
-  background: #ffffff;               /* soft panel look */
+  background: #ffffff;
   border: 2px solid #002d62;
-  border-radius: 10px;
+  border-radius: 9px;
 
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.3rem, 1.9vw, 1.7rem);
   font-weight: 500;
   color: #0a2a5e;
   text-align: left;
 
   box-shadow:
-    0 3.5px 0 rgba(10, 42, 94, 0.18);
+    0 3px 0 rgba(10, 42, 94, 0.18);
 
   cursor: pointer;
 
@@ -632,7 +637,7 @@ main {
 .choice-btn:hover {
   background: #eef2f7;
   box-shadow:
-    0 6px 0 rgba(10, 42, 94, 0.25);
+    0 5px 0 rgba(10, 42, 94, 0.25);
 }
 
 /* Keyboard / eye-gaze focus */
@@ -641,8 +646,6 @@ main {
   outline-offset: 3px;
 }
 
-.choice-btn a:focus,
-.choice-btn a:active,
 .choice-btn:focus,
 .choice-btn:active {
   outline: 2px solid #fbbf24;
@@ -651,9 +654,9 @@ main {
 
 /* Active / click */
 .choice-btn:active {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow:
-    0 6px 0 rgba(10, 42, 94, 0.28);
+    0 5px 0 rgba(10, 42, 94, 0.28);
 }
 
 /* Mobile safety */
@@ -668,10 +671,10 @@ main {
 
 .progress-container {
   width: 100%;
-  height: 6px;
-  margin-top: 1.2rem;
+  height: 5px;
+  margin-top: 1rem;
 
-  background: #e5ecf6; /* soft neutral blue */
+  background: #e5ecf6;
   border-radius: 999px;
   overflow: hidden;
 }
@@ -679,8 +682,6 @@ main {
 .progress-bar {
   height: 100%;
   width: 0%; /* controlled by JS */
-
   background: #4f8aea;
   border-radius: 999px;
 }
-

@@ -1,47 +1,1098 @@
 [
   {
-    "title": "Pain & Symptom Management",
-    "description": "Evidence-based guidance on managing pain, dyspnea, fatigue, and other common ALS-related symptoms.",
+    "title": "Advance Directives | The ALS Association",
+    "description": "Printable handout that describes how advance directives work, links to create an advance directive.",
     "source": "ALS Association",
-    "type": "Website",
-    "category": "symptom-management",
-    "topics": ["pain", "dyspnea", "fatigue", "comfort"],
-    "url": "https://www.als.org"
-  },
-{
-    "title": "Pain & Symptom Management",
-    "description": "Evidence-based guidance on managing pain, dyspnea, fatigue, and other common ALS-related symptoms.",
-    "source": "ALS Association",
-    "type": "Website",
-    "category": "symptom-management",
-    "topics": ["pain", "dyspnea", "fatigue", "comfort"],
-    "url": "https://www.als.org"
-  },
-  {
-    "title": "Pain & Symptom Management",
-    "description": "Evidence-based guidance on managing pain, dyspnea, fatigue, and other common ALS-related symptoms.",
-    "source": "ALS Association",
-    "type": "Website",
-    "category": "symptom-management",
-    "topics": ["pain", "dyspnea", "fatigue", "comfort"],
-    "url": "https://www.als.org"
-  },
- {
-    "title": "Pain & Symptom Management",
-    "description": "Evidence-based guidance on managing pain, dyspnea, fatigue, and other common ALS-related symptoms.",
-    "source": "ALS Association",
-    "type": "Website",
-    "category": "symptom-management",
-    "topics": ["pain", "dyspnea", "fatigue", "comfort"],
-    "url": "https://www.als.org"
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.als.org/navigating-als/end-of-life-plans/advance-directives"
   },
   {
-    "title": "Advance Care Planning",
-    "description": "Guidance on advance directives and decision-making in ALS.",
-    "source": "INPCS",
-    "type": "PDF",
-    "category": "planning",
-    "topics": ["advance-directives", "decision-making", "end-of-life"],
-    "url": "#"
+    "title": "Advance Directives for ALS",
+    "description": "Website with embedded videos, why to complete advance directives, what decisions need to be made, which forms to complete, where to find the forms, what else to do once these forms are filled.",
+    "source": "YourALSGuide",
+    "type": "Website",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youralsguide.com/advance-directives.html"
+  },
+  {
+    "title": "ALS & Breathing",
+    "description": "Printable handout describes breathing weakness, symptoms, non-invasive ventilation (CPAP/BiPAP), invasive ventilation (tracheostomy).",
+    "source": "Les Turner",
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en",
+      "es"
+    ],
+    "url": "https://lesturnerals.org/als-breathing-guide/"
+  },
+  {
+    "title": "ALS & Nutrition",
+    "description": "Printable handout about feeding tubes.",
+    "source": "Les Turner",
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Feeding Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en",
+      "es"
+    ],
+    "url": "https://lesturnerals.org/als-nutrition-guide/"
+  },
+  {
+    "title": "ALS Medical Decisions",
+    "description": "Website with a list and brief description with links to learn more about ALS medical team, approved drugs, clinical trials, feeding tubes, tracheostomy and ventilator, and advance directives.",
+    "source": "YourALSGuide",
+    "type": "Website",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance",
+      "Decisions Around Feeding Assistance",
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youralsguide.com/medical-decisions.html"
+  },
+  {
+    "title": "ASK ME: ALS and Palliative Care webinar",
+    "description": "Youtube webinar that covers the topics of: palliative care definition, advance care planning, advance directives, how palliative care is different from hospice, and available resources.",
+    "source": "ALS Network",
+    "type": "Webinar",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc"
+  },
+  {
+    "title": "ASK ME: When to Consider using a Feeding Tube",
+    "description": "Youtube webinar about nutrition challenges, purpose of feeding tubes, process for placement, decision-making.",
+    "source": "ALS Network",
+    "type": "Webinar",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Feeding Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=l5mzqkYVrKk"
+  },
+  {
+    "title": "Breathing support for people with ALS: Decision Tool",
+    "description": "Interactive decision tool including information about non-invasive ventilation (CPAP/BiPAP), how it works, perceived benefits, perceived risks, symptoms that may trigger need for non-invasive ventilation (CPAP/BiPAP), timing on starting, choosing no non-invasive ventilation (CPAP/BiPAP), and tools to help people think about what matters most.",
+    "source": "Les Turner",
+    "type": "Interactive Tool",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://lesturnerals.org/respiratory/about-this-decision-tool/"
+  },
+  {
+    "title": "Charting your Respiratory Care Plan",
+    "description": "Website describing basics of respiratory, managing work of breathing, deciding on invasive ventilation, including when to stop, advance directives, and healthcare power of attorney.",
+    "source": "ALS Association",
+    "type": "Webinar",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "http://www.alsa.org/als-care/resources/als-insight/articles/august2015-respiratory-care-plan.html"
+  },
+  {
+    "title": "Evaluating the Value of Palliative or Hospice Services",
+    "description": "Youtube webinar about palliative care and hospice, their benefits, and making complex decisions.",
+    "source": "ALS Association",
+    "type": "Webinar",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=cyq_D0K7QhU"
+  },
+  {
+    "title": "Feeding Tubes/Nutrition",
+    "description": "Printable website with description of poor appetite, links to resources about feeding tubes.",
+    "source": "IAmALS",
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Feeding Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.iamals.org/get-help/feeding-tubes-nutrition/"
+  },
+  {
+    "title": "FYI: Planning for the Future | The ALS Association",
+    "description": "Printable handout: care planning (living wills, durable power of attorney, resuscitation (CPR/do not resuscitate), financial planning, estate planning.",
+    "source": "ALS Association",
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.als.org/navigating-als/resources/fyi-planning-future"
+  },
+  {
+    "title": "General questions about palliative care",
+    "description": "Multiple videos about palliative care in general including definition, when to start palliative, who provides it, advance directives, power of attorney, benefits of palliative care.",
+    "source": "Roon",
+    "type": "Videos",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G "
+  },
+  {
+    "title": "Hospice Care for ALS",
+    "description": "Description about preparing for hospice including advance directives, getting equipment first, getting feeding tube first.",
+    "source": "YourALSGuide",
+    "type": "Web Page",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Feeding Assistance",
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youralsguide.com/hospice-care.html"
+  },
+  {
+    "title": "Identifying and Communicating your values worksheet",
+    "description": "Printable worksheet to document values and goals.",
+    "source": "IAmALS",
+    "type": "Printable Website",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.iamals.org/wp-content/uploads/2020/10/Identifying-Your-Values-Checklist.pdf"
+  },
+  {
+    "title": "Invasive Mechanical Ventilation",
+    "description": "Printable website with information about what invasive ventilation is, timing, care needs, how to decide.",
+    "source": "ALS Network",
+    "type": "Printable Website",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-respiratory-guide/invasive-mechanical-ventilation/"
+  },
+  {
+    "title": "Maintaining Pulmonary Function with ALS",
+    "description": "Print-ready handout for patients and families on pulmonary care for ALS.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en",
+      "es"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2021/12/Maintaining-Breathing-Function-with-ALS.pdf; https://www.mda.org/sites/default/files/2022/01/Maintaining-Breathing-Function-with-ALS_en-espanol.pdf"
+  },
+  {
+    "title": "Nutrition and Swallowing in ALS",
+    "description": "Printable website about nutrition, calories, food modifications, hydration, and intro to feeding tubes.",
+    "source": "ALS Network",
+    "type": "Printable Website",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Feeding Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-nutrition/"
+  },
+  {
+    "title": "Nutrition support for people with ALS: Decision Tool",
+    "description": "Interactive decision tool including information about what feeding tubes are, how they're placed, caring for it, perceived benefits, perceived risks, symptoms that may trigger need for tubes, timing on starting, choosing no tube, what matters most.",
+    "source": "Les Turner",
+    "type": "Interactive Tool",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Feeding Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://lesturnerals.org/nutrition/about-this-decision-tool/"
+  },
+  {
+    "title": "Planning for End-of-Life Care",
+    "description": "Print-ready handout providing an overview of major care considerations for end-of-life including the difference between palliative and hospice care.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Printable Handout",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance",
+      "Decisions Around Feeding Assistance",
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
+  },
+  {
+    "title": "Questions about end of life and hospice",
+    "description": "Videos about resuscitation (CPR, do not resuscitate), prognosis after diagnosis, making sure peoples' wishes are honored.",
+    "source": "Roon",
+    "type": "Videos",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Advance Directives"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE"
+  },
+  {
+    "title": "Questions about tracheostomy and ventilators",
+    "description": "Videos about invasive ventilators (CPAP/BiPAP).",
+    "source": "Roon",
+    "type": "Videos",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.roon.com/als/explore/breathing-PGLnVyH9hGguE2nzDQBB45/tracheostomy---ventilators-RrZwkfizvhz5oXfWksUS72"
+  },
+  {
+    "title": "Tracheostomy and ALS",
+    "description": "Printable website with description of tracheostomy, links to resources.",
+    "source": "IAmALS",
+    "type": "Printable Worksheet",
+    "category": [
+      "Advanced Care Planning"
+    ],
+    "topics": [
+      "Decisions Around Breathing Assistance"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.iamals.org/get-help/tracheostomy-and-als/"
+  },
+  {
+    "title": "Advanced Care Planning for ALS",
+    "description": "Goes through a basic list of practical things that often are done at the end of life, including estate planning, advance directives, funeral planning, etc. ",
+    "source": "IAmALS",
+    "type": "Web Page",
+    "category": [
+      "End of Life Care"
+    ],
+    "topics": [
+      "Financial Planning"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.iamals.org/resources/advanced-care-planning-for-als/?utm_source"
+  },
+  {
+    "title": "Bereavement Support",
+    "description": "Website with description of bereavement, links to resources.",
+    "source": "ALS Network",
+    "type": "Website",
+    "category": [
+      "End of Life Care"
+    ],
+    "topics": [
+      "Bereavement Support"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://alsnetwork.org/navigating-als/bereavement-support-program/"
+  },
+  {
+    "title": "FYI: Planning for the Future | The ALS Association",
+    "description": "Printable handout: care planning (living wills, durable power of attorney, resuscitation (CPR/do not resuscitate), financial planning, estate planning.",
+    "source": "ALS Association",
+    "type": "Printable Handout",
+    "category": [
+      "End of Life Care"
+    ],
+    "topics": [
+      "Financial Planning"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.als.org/navigating-als/resources/fyi-planning-future"
+  },
+  {
+    "title": "Living with ALS Resource Guide 11: Approaching end of life in ALS",
+    "description": "Printable guide with talking about end of life, what to expect, spiritual support, anticipatory grief and bereavement, epectations and fears, counseling/psychotherapy, leaving a legacy.",
+    "source": "ALS Association",
+    "type": "Printable Guide",
+    "category": [
+      "End of Life Care"
+    ],
+    "topics": [
+      "Bereavement Support",
+      "Legacy Work"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "http://www.alsa.org/assets/pdfs/living-with-als-manuals/lwals_11_2017.pdf"
+  },
+  {
+    "title": "Planning for End-of-Life Care",
+    "description": "Article describing hospice, advocating for benefits, discussing costs and eligibility, location of care delivery, list of hospice resources.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Printable Handout",
+    "category": [
+      "End of Life Care"
+    ],
+    "topics": [
+      "Legacy Work",
+      "Financial Planning"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
+  },
+  {
+    "title": "Questions about end of life and hospice",
+    "description": "Videos about grief, bereavement, coping, talking with family about end of life, why and how to think about end of life, maintaining hope, legacy making, online resources.",
+    "source": "Roon",
+    "type": "Videos",
+    "category": [
+      "End of Life Care"
+    ],
+    "topics": [
+      "Bereavement Support",
+      "Legacy Work"
+    ],
+    "users": [
+      "pt",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE"
+  },
+  {
+    "title": "Exploring the Option of Hospice Care | The ALS Association",
+    "description": "Handout of top 10 facts about palliative care.",
+    "source": "ALS Association",
+    "type": "Handout",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "Benefits/timing/who provides it"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en",
+      "es"
+    ],
+    "url": "https://www.als.org/navigating-als/resources/exploring-option-hospice-care"
+  },
+  {
+    "title": "FYI: Hospice | The ALS Association",
+    "description": "Printable website describing hospice, info about timing, choosing a hospice, and paying for hospice.",
+    "source": "ALS Association",
+    "type": "Printable Website",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.als.org/navigating-als/resources/fyi-hospice"
+  },
+  {
+    "title": "Hospice Care | The ALS Association",
+    "description": "Printable website describing hospice with a youtube video.",
+    "source": "ALS Association",
+    "type": "Printable Website",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.als.org/navigating-als/end-of-life-plans/hospice-care"
+  },
+  {
+    "title": "Hospice Care for ALS",
+    "description": "Description about hospice, eligibility, what they provide, how to get started, getting equipment before enrolling.",
+    "source": "YourALSGuide",
+    "type": "Web Page",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youralsguide.com/hospice-care.html"
+  },
+  {
+    "title": "Living with ALS: Planning and Decision Making",
+    "description": "Printable resource guide/manual with palliative care mentioned as a resource.",
+    "source": "ALS Association",
+    "type": "Printable Guide",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://bit.ly/Resource-Guide-4"
+  },
+  {
+    "title": "Not Gloom and Doom: Demystifying Hospice",
+    "description": "Article describing hospice, advocating for benefits, discussing costs and eligibility, location of care delivery, list of hospice resources.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Article",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/alsn/article/not-gloom-and-doom-demystifying-hospice"
+  },
+  {
+    "title": "Palliative and Hospice Care for ALS",
+    "description": "Description about palliative care vs hospice.",
+    "source": "IAmALS",
+    "type": "Web Page",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/"
+  },
+  {
+    "title": "Planning for End-of-Life Care",
+    "description": "Print-ready handout providing an overview of major care considerations for end-of-life including the difference between palliative and hospice care.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Printable Handout",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
+  },
+  {
+    "title": "Questions about end of life and hospice",
+    "description": "Multiple videos about end of life and hospice including DNR, meaning making, palliative care, prognosis, coping, grief, meaning making, bereavement, what hospice is, medications in hospice.",
+    "source": "Roon",
+    "type": "Videos",
+    "category": [
+      "Hospice Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE"
+  },
+  {
+    "title": "10 Things to Know: Understanding Palliative Care",
+    "description": "Printable handout describing 10 facts and tips for people with ALS and families about palliative care.",
+    "source": "ALS Association",
+    "type": "Printable Handout",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en",
+      "es"
+    ],
+    "url": "https://www.als.org/navigating-als/resources/understanding-palliative-care"
+  },
+  {
+    "title": "ALS and Palliative Care",
+    "description": "Website that provides a short description of ALS, description of palliative care, how palliative works with ALS team, and links to finding palliative care.",
+    "source": "GetPalliativeCare (CAPC)",
+    "type": "Website",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://getpalliativecare.org/whatis/disease-types/als-palliative-care/"
+  },
+  {
+    "title": "ASK ME: ALS and Palliative Care webinar",
+    "description": "Youtube webinar that covers the topics of: palliative care definition, advance care planning, advance directives, how palliative care is different from hospice, and available resources.",
+    "source": "ALS Network",
+    "type": "Webinar",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc"
+  },
+  {
+    "title": "Evaluating the Value of Palliative or Hospice Services",
+    "description": "Youtube webinar about palliative care and hospice, their benefits, and making complex decisions.",
+    "source": "ALS Association",
+    "type": "Webinar",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=cyq_D0K7QhU"
+  },
+  {
+    "title": "General questions about palliative care",
+    "description": "Multiple videos about palliative care in general including definition, when to start palliative, who provides it, advance directives, power of attorney, benefits of palliative care.",
+    "source": "Roon",
+    "type": "Videos",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G"
+  },
+  {
+    "title": "How Palliative Care Can Support Your Health Journey",
+    "description": "Quest Magazine article on Palliative Care. ",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Article",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://mdaquest.org/how-palliative-care-can-support-your-health-journey/"
+  },
+  {
+    "title": "Living fully, living well: Palliative care approaches in ALS",
+    "description": "Youtube webinar about palliative care and its benefits.",
+    "source": "ALS Association",
+    "type": "Webinar",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=TtC7uAjOmI0"
+  },
+  {
+    "title": "Living with ALS: Planning and Decision Making",
+    "description": "Printable resource guide/manual with palliative care mentioned as a resource.",
+    "source": "ALS Association",
+    "type": "Printable Guide",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://bit.ly/Resource-Guide-4"
+  },
+  {
+    "title": "Palliative and Hospice Care for ALS",
+    "description": "Desciption about palliative care vs hospice.",
+    "source": "IAmALS",
+    "type": "Web Page",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/"
+  },
+  {
+    "title": "Palliative Care can be a Vital Support in ALS and other Neuromuscular Diseases - MDA Monthly Report Feature Article May 2022",
+    "description": "MDA Monthly Report Featured Article: description about palliative care, benefits for care partners, timing of palliative care.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Article",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2022/05/MDA-Monthly-Report-Palliative-Care-can-be-a-Vital-Support-in-ALS-Feature-Article-May-2022.pdf"
+  },
+  {
+    "title": "Palliative Care for People with ALS – Tips, Benefits, Overview -  Your ALS Guide",
+    "description": "Website description of what palliative care is with links to other website.",
+    "source": "YourALSGuide",
+    "type": "Web Page",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youralsguide.com/palliative-care.html"
+  },
+  {
+    "title": "Palliative care for people with ALS | NEALS",
+    "description": "Webinar describing palliative care for patients and care partners.",
+    "source": "Northeast Amyotrophic Lateral Sclerosis Consortium | NEALS",
+    "type": "Webinar",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://neals.org/people-living-with-als/educational-webinars/palliative-care-for-people-with-als"
+  },
+  {
+    "title": "Palliative Care in Neuromuscular Disease: Thinking Beyond Death and Dying",
+    "description": "MDA Monthly Report Featured Article: description about palliative care.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Article",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different"
+    ],
+    "users": [
+      "patients",
+      "carepartners",
+      "clinicians"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2019/10/MDA_Monthly_Report_Monthly_Feature_November_Full_Article.pdf"
+  },
+  {
+    "title": "Planning for End-of-Life Care",
+    "description": "Print-ready handout providing an overview of major care considerations for end-of-life including the difference between palliative and hospice care.",
+    "source": "Muscular Dystrophy Association (MDA)",
+    "type": "Printable Handout",
+    "category": [
+      "Palliative Care"
+    ],
+    "topics": [
+      "Definition",
+      "How Palliative Care and Hospice are Different",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "users": [
+      "patients",
+      "carepartners"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
   }
 ]
