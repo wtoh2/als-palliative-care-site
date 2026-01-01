@@ -128,7 +128,45 @@ fetch("assets/data/resources.json")
       a.title.localeCompare(b.title, undefined, { sensitivity: "base" })
     );
 
+    // Deduplicate ONLY for Full Resources view
+    const isFullResourcesView = !flowAnswers;
+
+    const processedResources = isFullResourcesView
+      ? dedupeResourcesByTitle(resources)
+      : resources;
+
     let activeCategory = "all";
+
+    function dedupeResourcesByTitle(resourceList) {
+      const seen = new Map();
+
+      resourceList.forEach(resource => {
+        const key = resource.title.trim().toLowerCase();
+
+        if (!seen.has(key)) {
+          // clone first occurrence
+          seen.set(key, {
+            ...resource,
+            category: Array.isArray(resource.category)
+              ? [...resource.category]
+              : []
+          });
+        } else {
+          const existing = seen.get(key);
+
+          // merge categories only
+          if (Array.isArray(resource.category)) {
+            resource.category.forEach(cat => {
+              if (!existing.category.includes(cat)) {
+                existing.category.push(cat);
+              }
+            });
+          }
+        }
+      });
+
+      return Array.from(seen.values());
+    }
 
     function applyFlowFilters(resourceList) {
       if (!flowAnswers) return resourceList;
@@ -166,7 +204,7 @@ fetch("assets/data/resources.json")
         return true;
       });
     }
-    const baseFilteredResources = applyFlowFilters(resources);
+    const baseFilteredResources = applyFlowFilters(processedResources);
 
     /* -------------------------------------------
        Render cards
@@ -219,6 +257,42 @@ fetch("assets/data/resources.json")
                 ? Array.isArray(r.topics) && r.topics.includes(activeCategory)
                 : Array.isArray(r.category) && r.category.includes(activeCategory)
             );
+
+      // ---- ZERO RESULTS STATE ----
+      if (filtered.length === 0) {
+        // Hide filters
+        const filters = document.querySelector(".filters");
+        if (filters) filters.style.display = "none";
+
+        container.innerHTML = `
+          <div class="no-results" role="status" aria-live="polite">
+            <h2>No results found</h2>
+            <p>
+              Press <strong>Back</strong> to try different filters,
+              or view all resources.
+            </p>
+
+          <button id="view-all-btn" class="hero-btn">
+            View All Resources
+          </button>
+        `;
+
+        const viewAllBtn = document.getElementById("view-all-btn");
+
+        if (viewAllBtn) {
+          viewAllBtn.addEventListener("click", () => {
+            sessionStorage.removeItem("getStartedAnswers");
+            window.location.href = "resources.html";
+          });
+        }
+
+        updateResourcesTitle(0);
+        return;
+      }
+
+      // ---- NORMAL STATE ----
+      const filters = document.querySelector(".filters");
+      if (filters) filters.style.display = "";
 
       renderResources(filtered);
       updateResourcesTitle(filtered.length);

@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap");
 
-html, body {
-  height: 100%;
-}
-
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -19,8 +16,10 @@ main {
 /* ===== Header ===== */
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left:0; 
+  width: 100%;
   z-index: 1000;
 
   background: #ffffff;
@@ -31,7 +30,7 @@ main {
 .header-inner {
   max-width: 95%;
   margin: 0 auto;
-  padding: 0.8rem clamp(1.25rem, 4vw, 3rem);
+  padding: 0.6rem clamp(1.25rem, 4vw, 3rem);
 
   display: flex;
   align-items: center;
@@ -71,6 +70,7 @@ main {
 
 /* Right side */
 .header-right a {
+  min-height: 50px;
   font-size: 1.05rem;
   padding: 0.35rem 0.9rem;
   background: #eef2f7;
@@ -111,7 +111,7 @@ main {
 .hero {
   max-width: 90%;
   margin: 0 auto;
-  padding: 1.0rem 3.5rem; /* ↓ vertical, keep horizontal */
+  padding: 2.0rem 3.5rem; /* ↓ vertical, keep horizontal */
 
   display: grid;
   grid-template-columns: minmax(720px, 2.2fr) 0.8fr; 
@@ -161,16 +161,17 @@ main {
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.8rem;
 }
 
 .hero-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 60px;
 
   font-family: "Archivo Black", sans-serif;
-  font-size: clamp(1.2rem, 1.4vw, 1.55rem);
+  font-size: clamp(1.5rem, 1.4vw, 2.00rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -251,7 +252,7 @@ main {
   margin: 0.2rem auto;
 
   width: 150px;
-  height: 50px;
+  height: 60px;
 
   font-family: "Archivo Black", sans-serif;
   font-size: 1.4rem;
@@ -438,7 +439,7 @@ main {
 
 .filters {
   position: fixed;
-  top: 7.5rem;     /* aligns visually with first card */
+  top: 6rem;     /* aligns visually with first card */
   right: 2rem;      /* sits in unused page margin */
   width: clamp(180px, 16vw, 240px);
   z-index: 1000;
@@ -455,7 +456,7 @@ main {
 .filter-options.vertical {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .filter-btn {
@@ -463,7 +464,7 @@ main {
   text-align: left;
 
   padding: 0.9rem 1rem;   /* ⬆ increases button height */
-  min-height: 60px;       /* ⬆ guarantees large target */
+  min-height: 80px;       /* ⬆ guarantees large target */
 
   background: #ffffff;
   border: 2px solid #0a2a5e;
@@ -510,8 +511,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  width: 90px;
-  height: 70px;
+  width: 100px;
+  height: 80px;
 
   font-family: "Archivo Black", sans-serif;
   font-size: 2rem;
@@ -598,7 +599,7 @@ main {
 .question-options {
   display: flex;
   flex-direction: column;
-  gap: 1.3rem;
+  gap: 24px;
   align-items: stretch;
 }
 
@@ -610,7 +611,7 @@ main {
   justify-content: flex-start;
 
   padding: clamp(0.9rem, 1.8vw, 1.25rem);
-  min-height: clamp(64px, 8vh, 96px);
+  min-height: clamp(80px, 8vh, 96px);
 
   background: #ffffff;
   border: 2px solid #002d62;
@@ -684,4 +685,57 @@ main {
   width: 0%; /* controlled by JS */
   background: #4f8aea;
   border-radius: 999px;
+}
+
+.header-spacer {
+  height: 80px;   /* match header height */
+  flex-shrink: 0;
+}
+
+
+.no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #0a2a5e;
+}
+
+.no-results h2 {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.no-results p {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.no-results .hero-btn {
+  margin-top: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Soft dwell halo (visual feedback only, no activation) */
+.resource-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 3px solid rgba(79, 138, 234, 0);
+  transition: border-color 0.1s ease;
+  pointer-events: none;
+}
+
+.resource-card:hover::after,
+.resource-card:focus-visible::after{
+  border-color: rgba(79, 138, 234, 0.55);
 }
