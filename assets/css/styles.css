@@ -107,14 +107,17 @@ main {
   display: block;
 }
 
-/* ===== Main Page ===== */
 .hero {
   max-width: 90%;
   margin: 0 auto;
-  padding: 0.5rem 3.5rem; /* ↓ vertical, keep horizontal */
+
+  padding-top: 2rem;    
+  padding-bottom: 0rem; 
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 
   display: grid;
-  grid-template-columns: minmax(720px, 2.2fr) 0.8fr; 
+  grid-template-columns: minmax(720px, 2.2fr) 0.8fr;
   align-items: center;
   gap: 2.5rem;
 }
@@ -136,7 +139,7 @@ main {
     1px 1px 0 rgba(0,0,0,0.15);
 
   margin: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Supporting text */
