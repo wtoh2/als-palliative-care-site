@@ -74,10 +74,10 @@ main {
   font-size: 1.05rem;
   padding: 0.35rem 0.9rem;
   background: #eef2f7;
+  border: 2px solid #d1d5db;
 
   color: #002d62;
   text-decoration: none;
-  border: 2px solid transparent;
   border-radius: 6px;
 }
 
@@ -111,7 +111,7 @@ main {
 .hero {
   max-width: 90%;
   margin: 0 auto;
-  padding: 2.0rem 3.5rem; /* ↓ vertical, keep horizontal */
+  padding: 0.5rem 3.5rem; /* ↓ vertical, keep horizontal */
 
   display: grid;
   grid-template-columns: minmax(720px, 2.2fr) 0.8fr; 
@@ -168,7 +168,7 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 60px;
+  min-height: 50px;
 
   font-family: "Archivo Black", sans-serif;
   font-size: clamp(1.5rem, 1.4vw, 2.00rem);
@@ -251,7 +251,7 @@ main {
   display: block;
   margin: 0.2rem auto;
 
-  width: 150px;
+  width: 170px;
   height: 60px;
 
   font-family: "Archivo Black", sans-serif;
@@ -280,7 +280,7 @@ main {
 /* Fixed scroll-down button */
 .scroll-btn.fixed {
   position: fixed;
-  bottom: 1rem;
+  bottom: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
 
@@ -314,7 +314,7 @@ main {
 #resources-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; 
+  gap: 24px; 
 }
 
 /* Whole card is clickable */
@@ -329,19 +329,6 @@ main {
   color: #0a2a5e;
 
   transition: background-color 0.15s ease, transform 0.05s ease;
-}
-
-/* Dashed divider between meta and title (no layout impact) */
-.resource-card::before {
-  content: "";
-  position: absolute;
-
-  left: 1rem;
-  right: 1rem;
-  top: 2.15rem; /* sits in existing whitespace */
-
-  border-top: 1.5px dashed rgba(10, 42, 94, 0.35);
-  pointer-events: none;
 }
 
 /* Hover = light blue */
@@ -411,6 +398,69 @@ main {
   border: none;
 }
 
+.resource-topics-inline {
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.resource-topics-inline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-top: 1.5px dashed rgba(10, 42, 94, 0.35);
+}
+
+/* Category prefix (e.g. "Palliative Care:") */
+.resource-category-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0a2a5e;
+  margin-right: 0.25rem;
+  white-space: nowrap;
+}
+
+.resource-topic {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+
+  background: #e7eaef;   /* neutral cool gray */
+  color: #000000;        /* your site’s dark blue */
+}
+
+.resource-topics-inline {
+  display: flex;
+  flex-wrap: wrap;            /* wrap only when needed */
+  align-items: center;
+  gap: 0.35rem;               /* tight spacing */
+  margin-bottom: 0.5rem;
+}
+
+.resource-category-label {
+  font-weight: 600;
+  margin-right: 0.15rem;
+  white-space: nowrap;        /* keep label intact */
+}
+
+.resource-topic {
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.resource-topics {
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
 /* ===== Resources Header ===== */
 
 .resources-header {
@@ -464,7 +514,7 @@ main {
   text-align: left;
 
   padding: 0.9rem 1rem;   /* ⬆ increases button height */
-  min-height: 80px;       /* ⬆ guarantees large target */
+  min-height: 65px;       /* ⬆ guarantees large target */
 
   background: #ffffff;
   border: 2px solid #0a2a5e;
@@ -609,9 +659,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  padding: clamp(0.9rem, 1.8vw, 1.25rem);
-  min-height: clamp(80px, 8vh, 96px);
+  padding: clamp(20px, 1.8vw, 40px);
+  min-height: clamp(50px, 8vh, 100px);
 
   background: #ffffff;
   border: 2px solid #002d62;
@@ -716,6 +765,19 @@ main {
   margin-top: 1.5rem;
 }
 
+.no-results-btn {
+  font-family: "Inter", system-ui, sans-serif; /* lighter, readable */
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+
+  padding: 0.8rem 1.2rem;
+  min-height: 65px;
+
+  border-width: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
@@ -738,4 +800,224 @@ main {
 .resource-card:hover::after,
 .resource-card:focus-visible::after{
   border-color: rgba(79, 138, 234, 0.55);
+}
+
+/* ===== Accessibility Page Layout Override ===== */
+
+.accessibility-page .resources {
+  max-width: 1200px;   /* wider than resource lists */
+  width: 70%;          /* responsive on large screens */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1rem; 
+}
+
+/* Reduce vertical spacing inside sections */
+.accessibility-page section {
+  gap: 0.4rem; /* was 0.8rem */
+}
+
+.accessibility-page h2 {
+  color: #0a2a5e;              /* match site dark blue */
+  font-family: "Inter", system-ui, sans-serif;
+
+  font-size: 1.55rem;
+  font-weight: 700;            /* thickness control */
+  letter-spacing: 0.01em;      /* subtle clarity boost */
+  line-height: 1.3;
+
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Paragraph text: slightly larger & clearer */
+.accessibility-page p {
+  font-size: 20px; 
+  line-height: 1.6;
+}
+
+/* Lists: match paragraph size */
+.accessibility-page li {
+  font-size: 20px; 
+}
+
+/* Nested bullets: tighter */
+.accessibility-page li ul {
+  margin-top: 0.25rem;
+}
+
+/* Reduce padding so content feels less airy */
+.accessibility-page .resources {
+  padding: 1.2rem 1.6rem; /* was 1.5rem 2rem */
+}
+
+/* Mobile: keep readable but compact */
+@media (max-width: 800px) {
+  .accessibility-page p,
+  .accessibility-page li {
+    font-size: 1.05rem;
+  }
+}
+
+.accessibility-page .access-link,
+.accessibility-page .large-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef4ff;        /* light, calm */
+  color: #0a2a5e;
+
+  border: 2px solid #0a2a5e;
+  border-radius: 4px;
+
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+
+  padding: 1.5rem 1.4rem;
+  min-height: 50px;
+
+  cursor: pointer;
+}
+
+/* Hover: subtle, not CTA-like */
+.accessibility-page .access-link:hover,
+.accessibility-page .large-contact-btn:hover {
+  background: #dbe7ff;
+}
+
+/* Focus / active: SAME yellow language as rest of site */
+.accessibility-page .access-link:focus,
+.accessibility-page .access-link:active,
+.accessibility-page .large-contact-btn:focus,
+.accessibility-page .large-contact-btn:active {
+  outline: 2px solid #fbbf24;
+  outline-offset: 3px;
+}
+
+/* Mobile safety */
+@media (max-width: 800px) {
+  .accessibility-page .access-link,
+  .accessibility-page .large-contact-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+.accessibility-page strong {
+  font-weight: 500;
+  color: #1b78ea; /* same dark blue */
+}
+
+.accessibility-page em {
+  font-style: normal;
+  font-weight: 600;
+  color: #374151; /* slightly softer */
+}
+
+/* Primary bullets */
+.accessibility-page ul > li {
+  margin-bottom: 0.6rem;
+}
+
+/* Nested explanatory bullets */
+.accessibility-page ul ul {
+  margin-top: 0.4rem;
+  padding-left: 1.4rem;
+}
+
+.accessibility-page ul ul li {
+  font-size: 0.95em;
+}
+
+/* Visual example: focus highlight / outline */
+.focus-indicator {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+
+  border: 2px solid rgba(10, 42, 94, 0.7);
+  border-radius: 4px;
+
+  font-weight: 600;
+  color: #0a2a5e;
+  background: rgba(10, 42, 94, 0.05);
+}
+
+/* Visual example: activation yellow ring */
+.activation-indicator {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+
+  border-radius: 4px; /* ring-like */
+  font-weight: 600;
+  color: #813506; /* warm but readable */
+
+  box-shadow:
+    0 0 0 2px #fbbf24; /* yellow ring */
+}
+
+.scroll-indicator {
+  display: inline-block;
+
+  font-size: 0.95em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+
+  color: #0a2a5e; /* same dark blue as headings */
+}
+
+/* Keyboard key styling (neutral, familiar) */
+kbd {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin: 0 0.1em;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+
+  color: #000000;
+  background: #ffffff;
+
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Accessibility action buttons layout */ 
+
+/* Accessibility action buttons layout */
+.access-actions {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Left button: smaller but intentional */
+.access-actions .large-contact-btn {
+  flex: 0 0 35%;
+  font-size: 1.3rem;
+}
+
+/* Right button: primary emphasis */
+.access-actions .developer-btn {
+  flex: 0 0 50%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Developer button: allow normal text wrapping */ 
+.accessibility-page .developer-btn { display: block; /* NOT flex */ line-height: 1.5; }
+
+.tech-highlight {
+  color: #1b78ea;        /* same blue you use elsewhere */
+  font-weight: 700;
+  white-space: nowrap;  /* prevents awkward line breaks */
 }

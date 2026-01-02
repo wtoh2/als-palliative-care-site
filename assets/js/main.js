@@ -1,3 +1,16 @@
+const TOPIC_DISPLAY_MAP = {
+  "How Palliative Care and Hospice are Different": "Palliative vs. Hospice",
+  "Breathing Assistance Decisions": "Breathing",
+  "Feeding Assistance Decisions": "Feeding",
+  "Benefits, Timing, and Who Provides It": "Benefits/Timing/Providers"
+  // add as many as you want
+};
+
+function getTopicLabel(topic) {
+  return TOPIC_DISPLAY_MAP[topic] 
+    || topic.replace(/-/g, " ");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const scrollUpBtn = document.getElementById("scroll-up");
   const scrollDownBtn = document.getElementById("scroll-down");
@@ -47,10 +60,15 @@ fetch("assets/data/resources.json")
     const filtersTitleEl = document.getElementById("filters-title");
 
     if (filtersTitleEl) {
-      filtersTitleEl.textContent =
-        filterMode === "topic"
-          ? "Filter by Topic"
-          : "Filter by Category";
+      if (filterMode === "topic" && flowAnswers?.category) {
+        const categoryLabel = flowAnswers.category
+          .replace(/-/g, " ")
+          .replace(/\b\w/g, c => c.toUpperCase());
+
+        filtersTitleEl.textContent = `Filter by ${categoryLabel} Subtopics`;
+      } else {
+        filtersTitleEl.textContent = "Filter by Category";
+      }
     }
     
     const titleEl = document.getElementById("resources-title");
@@ -128,44 +146,55 @@ fetch("assets/data/resources.json")
       a.title.localeCompare(b.title, undefined, { sensitivity: "base" })
     );
 
-    // Deduplicate ONLY for Full Resources view
-    const isFullResourcesView = !flowAnswers;
-
-    const processedResources = isFullResourcesView
-      ? dedupeResourcesByTitle(resources)
-      : resources;
+    const processedResources = dedupeResourcesByTitle(resources);
 
     let activeCategory = "all";
 
     function dedupeResourcesByTitle(resourceList) {
-      const seen = new Map();
+      const map = new Map();
 
       resourceList.forEach(resource => {
         const key = resource.title.trim().toLowerCase();
 
-        if (!seen.has(key)) {
-          // clone first occurrence
-          seen.set(key, {
-            ...resource,
-            category: Array.isArray(resource.category)
-              ? [...resource.category]
-              : []
+        if (!map.has(key)) {
+          map.set(key, {
+            title: resource.title,
+            url: resource.url,
+            source: resource.source,
+            type: resource.type,
+            description: resource.description,   // ✅ FIX
+            users: resource.users || [],          // ✅ preserve for flow filters
+            language: resource.language || [],    // ✅ preserve for flow filters
+            categories: [],
+            topicsByCategory: {}
           });
-        } else {
-          const existing = seen.get(key);
+        }
 
-          // merge categories only
-          if (Array.isArray(resource.category)) {
-            resource.category.forEach(cat => {
-              if (!existing.category.includes(cat)) {
-                existing.category.push(cat);
-              }
-            });
-          }
+        const merged = map.get(key);
+
+        // ---- Categories + topics ----
+        if (Array.isArray(resource.category)) {
+          resource.category.forEach(cat => {
+            if (!merged.categories.includes(cat)) {
+              merged.categories.push(cat);
+            }
+
+            if (!merged.topicsByCategory[cat]) {
+              merged.topicsByCategory[cat] = [];
+            }
+
+            if (Array.isArray(resource.topics)) {
+              resource.topics.forEach(topic => {
+                if (!merged.topicsByCategory[cat].includes(topic)) {
+                  merged.topicsByCategory[cat].push(topic);
+                }
+              });
+            }
+          });
         }
       });
 
-      return Array.from(seen.values());
+      return Array.from(map.values());
     }
 
     function applyFlowFilters(resourceList) {
@@ -195,8 +224,7 @@ fetch("assets/data/resources.json")
         /* Step 3 → category → category */
         if (
           flowAnswers.category &&
-          Array.isArray(resource.category) &&
-          !resource.category.includes(flowAnswers.category)
+          !resource.categories.includes(flowAnswers.category)
         ) {
           return false;
         }
@@ -226,18 +254,39 @@ fetch("assets/data/resources.json")
           `${resource.title} (opens in a new tab)`
         );
 
-        card.innerHTML = `
-          <div class="resource-meta">
-            <span class="resource-source">${resource.source}</span>
-            <span class="resource-type">${resource.type}</span>
-          </div>
+      const topicsHtml = `
+        <div class="resource-topics-inline">
+          ${Object.entries(resource.topicsByCategory)
+            .map(([category, topics]) => `
+              <span class="resource-category-label">
+                ${category.replace(/-/g, " ")}:
+              </span>
+              ${topics.map(topic => `
+                <span class="resource-topic">
+                  ${getTopicLabel(topic)}
+                </span>
+              `).join("")}
+            `)
+            .join("")}
+        </div>
 
-          <h2 class="resource-title">${resource.title}</h2>
+        <div class="resource-divider"></div>
+      `;
 
-          <p class="resource-description">
-            ${resource.description}
-          </p>
-        `;
+      card.innerHTML = `
+        <div class="resource-meta">
+          <span class="resource-source">${resource.source}</span>
+          <span class="resource-type">${resource.type}</span>
+        </div>
+
+        ${topicsHtml}
+
+        <h2 class="resource-title">${resource.title}</h2>
+
+        <p class="resource-description">
+          ${resource.description}
+        </p>
+      `;
 
         container.appendChild(card);
       });
@@ -249,21 +298,32 @@ fetch("assets/data/resources.json")
     function renderFilteredResources() {
       const baseList = baseFilteredResources; 
 
-      const filtered =
-        activeCategory === "all"
-          ? baseList
-          : baseList.filter(r =>
-              filterMode === "topic"
-                ? Array.isArray(r.topics) && r.topics.includes(activeCategory)
-                : Array.isArray(r.category) && r.category.includes(activeCategory)
-            );
+      const filtered = baseList.filter(resource => {
+        // ---- Category filter ----
+        if (filterMode === "category" && activeCategory !== "all") {
+          return resource.categories.includes(activeCategory);
+        }
+
+        // ---- Topic filter ----
+        if (filterMode === "topic" && activeCategory !== "all") {
+          if (flowAnswers?.category) {
+            // Get Started: ONLY topics under selected category
+            const scopedTopics =
+              resource.topicsByCategory[flowAnswers.category] || [];
+            return scopedTopics.includes(activeCategory);
+          }
+
+          // Normal view: ANY category match
+          return Object.values(resource.topicsByCategory)
+            .flat()
+            .includes(activeCategory);
+        }
+
+        return true;
+      });
 
       // ---- ZERO RESULTS STATE ----
       if (filtered.length === 0) {
-        // Hide filters
-        const filters = document.querySelector(".filters");
-        if (filters) filters.style.display = "none";
-
         container.innerHTML = `
           <div class="no-results" role="status" aria-live="polite">
             <h2>No results found</h2>
@@ -272,9 +332,10 @@ fetch("assets/data/resources.json")
               or view all resources.
             </p>
 
-          <button id="view-all-btn" class="hero-btn">
-            View All Resources
-          </button>
+            <button id="view-all-btn" class="hero-btn no-results-btn">
+              View All Resources
+            </button>
+          </div>
         `;
 
         const viewAllBtn = document.getElementById("view-all-btn");
@@ -301,14 +362,16 @@ fetch("assets/data/resources.json")
     /* -------------------------------------------
        Build category buttons
     --------------------------------------------*/
-    const categories = [
-      "all",
-      ...new Set(
-        filterMode === "topic"
-          ? baseFilteredResources.flatMap(r => r.topics || [])
-          : baseFilteredResources.flatMap(r => r.category || [])
-      )
-    ];
+    const categories = ["all", ...new Set(
+      filterMode === "topic"
+        ? processedResources.flatMap(r => {
+            if (flowAnswers?.category) {
+              return r.topicsByCategory[flowAnswers.category] || [];
+            }
+            return Object.values(r.topicsByCategory).flat();
+          })
+        : processedResources.flatMap(r => r.categories)
+    )];
 
     categories.forEach(category => {
       const button = document.createElement("button");

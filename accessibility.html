@@ -1,0 +1,156 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ALS Palliative Care Resources</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" href="assets/images/AI_ALS_Favicon.png">
+  </head>
+
+  <body>
+    <!-- ===== Header (same as resources.html) ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+
+        <div class="header-left">
+          <img
+            src="assets/images/INPCS_Logo.png"
+            alt="INPCS Society logo"
+            class="site-logo"
+          />
+          <span class="site-title">
+            ALS <span class="title-accent">PALLIATIVE CARE</span> RESOURCE GUIDE
+          </span>
+        </div>
+
+        <div class="header-center">
+          <button class="scroll-btn" id="scroll-up" aria-label="Scroll up">
+            ▲
+          </button>
+        </div>
+
+        <nav class="header-right">
+          <a href="index.html" class="access-link" aria-current="page">
+            <img
+              src="assets/images/AI_Home.png"
+              alt=""
+              aria-hidden="true"
+              class="access-icon"
+            />
+            <span>Return to Home</span>
+          </a>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Back button -->
+    <button
+      class="back-btn fixed-back"
+      aria-label="Go back"
+      onclick="history.back()"
+    >
+      <span class="back-text">Back</span>
+      <span class="back-arrow">←</span>
+    </button>
+
+    <div class="header-spacer" aria-hidden="true"></div>
+
+    <!-- ===== Main Content ===== -->
+    <main class="accessibility-page">
+      <section class="resources">
+
+        <header class="resources-header">
+          <h1 class="resources-title">Accessibility & Using This Site</h1>
+        </header>
+
+        <!-- Intro -->
+        <section>
+          <p>
+            This site is designed to support eye-tracking systems and other assistive technologies that act like a mouse or keyboard. The goal is to enable
+            accessibility through native user interface design, while complementing your device’s own accessibility settings.
+          </p>
+        </section>
+
+        <!-- How to Navigate -->
+        <section>
+          <h2>How to Navigate the Site</h2>
+          <ul>
+            <li>All clickable elements are presented as <strong>large selectable buttons</strong>.</li>
+            <li>
+              <strong>Focusing</strong> on a button highlights it, but activation only occurs when your device sends a <strong>click/selection</strong> command.
+              <ul>
+                <li>A visible <span class="focus-indicator">highlight / outline change</span> indicates when a button is focused.</li>
+                <li>A <span class="activation-indicator">yellow ring</span> appears to confirm when a button has been activated.</li>
+              </ul>
+            </li>
+            <li>
+              Where needed, <strong>vertical scroll buttons</strong> (<span class="scroll-indicator" aria-hidden="true"> ▲ ▼ 
+              </span>) are provided as an alternative to continuous scrolling.
+            </li>
+            <li>Take your time. Nothing happens automatically or without your input.</li>
+          </ul>
+        </section>
+
+        <!-- Keyboard -->
+        <section>
+          <h2>Keyboard Navigation</h2>
+          <p>If you use a keyboard or keyboard-based control:</p>
+          <ul>
+            <li>
+              Press <kbd>Tab</kbd> or <kbd>Shift</kbd> + <kbd>Tab</kbd> to move between buttons.
+            </li>
+            <li>
+              Press <kbd>Enter</kbd> to activate a button or link.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Feedback & Accessibility Issues</h2>
+          <p>
+            If you have trouble using the site, notice something could work better, or have suggestions for 
+            improving accessibility, please contact the site managers.
+          </p>
+
+          <div class="access-actions">
+            <a
+              class="access-link large-contact-btn"
+              href="mailto:wtoh2@jhu.edu,amehta23@jhmi.edu"
+            >
+              Contact the Site Managers
+            </a>
+
+            <a
+              href="assets/docs/gaze-accessible-design-principles_0102_2026.pdf"
+              class="access-link developer-btn"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open PDF: Gaze-accessible design principles (opens in a new tab)"
+            >
+              Web Developer Interested in Building Gaze-Accessible Sites?
+              Here is a list of the <span class="tech-highlight">7 Technical Design Principles</span> we used. 
+            </a>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- Scroll Down -->
+      <button class="scroll-btn fixed" id="scroll-down" aria-label="Scroll down">
+        ▼
+      </button>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <p>
+        This website is not an official Johns Hopkins University website and does not
+        represent institutional policy. © 2025.
+      </p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

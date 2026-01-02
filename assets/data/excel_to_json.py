@@ -28,8 +28,8 @@ USER_MAP = {
 TOPIC_MAP = {
     # Advance Care Planning
     "advance directives": "Advance Directives",
-    "feeding": "Decisions Around Feeding Assistance",
-    "breathing": "Decisions Around Breathing Assistance",
+    "feeding": "Feeding Assistance Decisions",
+    "breathing": "Breathing Assistance Decisions",
 
     # End of Life Care
     "bereavement": "Bereavement Support",
@@ -37,7 +37,7 @@ TOPIC_MAP = {
     "financial planning": "Financial Planning",
 
     # Palliative / Hospice (shared concepts)
-    "definition": "Definition",
+    "definitions": "Definitions",
     "differences": "How Palliative Care and Hospice are Different",
     "benefits/timing/who provides": "Benefits, Timing, and Who Provides It",
 
