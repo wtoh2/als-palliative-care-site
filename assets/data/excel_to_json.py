@@ -6,9 +6,15 @@ from pathlib import Path
 # PATH SETUP
 # ==============================
 SCRIPT_DIR = Path(__file__).resolve().parent
-
-INPUT_EXCEL = SCRIPT_DIR / "Cleaned_ALS_Website_Resource_MasterList_0409_2025.xlsx"
 OUTPUT_JSON = SCRIPT_DIR / "resources.json"
+
+GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1uNRJs05HKs0zt11cCPilnJ4Q6Dcd7pWI8P-MV7i34Lg/export?format=csv&gid=0"
+
+# Load data
+df = pd.read_csv(GOOGLE_SHEET_CSV_URL)
+
+# Clean column names (VERY important)
+df.columns = df.columns.str.strip()
 
 # Columns that should become arrays
 ARRAY_COLUMNS = {"category", "topics", "users", "language"}
@@ -93,11 +99,6 @@ def normalize_topics(values):
 # ==============================
 # BUILD PIPELINE
 # ==============================
-
-if not INPUT_EXCEL.exists():
-    raise FileNotFoundError(f"Missing input file: {INPUT_EXCEL}")
-
-df = pd.read_excel(INPUT_EXCEL)
 
 cards = []
 

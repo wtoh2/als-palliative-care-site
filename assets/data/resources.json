@@ -1,5 +1,6 @@
 [
   {
+    "date added": "04/06/2026",
     "title": "10 cosas que debe saber: Comprender los cuidados paliativos [Spanish]",
     "description": "Folleto imprimible que describe 10 datos y consejos sobre cuidados paliativos para personas con ELA y sus familias.",
     "source": "ALS Association",
@@ -8,7 +9,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (text)",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -17,10 +17,10 @@
     "language": [
       "es"
     ],
-    "url": "https://www.als.org/navigating-als/resources/cuidados-paliativos",
-    "Reviewer Note": "Spanish Language Link: https://www.als.org/navigating-als/resources/cuidados-paliativos"
+    "url": "https://www.als.org/navigating-als/resources/cuidados-paliativos"
   },
   {
+    "date added": "04/06/2026",
     "title": "10 Things to Know About Advance Care Planning",
     "description": "Printable handout describing 10 facts and tips about Advance Care Planning",
     "source": "ALS Association",
@@ -29,7 +29,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Advance Directives"
     ],
@@ -37,10 +36,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/sites/default/files/2025-08/10%20things%20to%20know%20-%20Advance%20Care%20Planning%20%28ACP%29.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/sites/default/files/2025-08/10%20things%20to%20know%20-%20Advance%20Care%20Planning%20%28ACP%29.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "10 Things to Know About Grief",
     "description": "Printable handout describing 10 facts and tips about grief",
     "source": "ALS Association",
@@ -49,7 +48,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -58,10 +56,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/sites/default/files/2025-08/10%20things%20to%20Know-%20Grief.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/sites/default/files/2025-08/10%20things%20to%20Know-%20Grief.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "10 Things to Know: Understanding Palliative Care",
     "description": "Printable handout describing 10 facts and tips for people with ALS and families about palliative care.",
     "source": "ALS Association",
@@ -70,7 +68,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (text)",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -79,11 +76,11 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/resources/understanding-palliative-care",
-    "Reviewer Note": "NCA - Very comprehensive, although lumps advance care planning with End-of-Life planning and burial/organ donation and doesn't explicitly name this as End-of-Life planning in the intro which may be confusing/misleading - references legal documents and planning for financial future, but then also has then discussion of DNR and funeral planning/life insurance. Not scannable format - End-of-Life topics are below the fold or only references in the conversation project link that is referenced (https://theconversationproject.org/wp-content/uploads/2017/02/ConversationProject-ConvoStarterKit-English.pdf) . Pros are that it offers a good overview of a lot of advance care planning issues and is written in laypeople's terminology. "
+    "url": "https://www.als.org/navigating-als/resources/understanding-palliative-care"
   },
   {
-    "title": "Advance Directives ",
+    "date added": "04/06/2026",
+    "title": "Advance Directives",
     "description": "Webpage that describes in general how an advance directive works, links to create an advance directive.",
     "source": "ALS Association",
     "type": "Article",
@@ -91,7 +88,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Advance Directives"
     ],
@@ -99,10 +95,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/end-of-life-plans/advance-directives",
-    "Reviewer Note": "Spanish Language LInk: https://es.lesturnerals.org/ela-y-la-respiracion/?_gl=1*19wvtw5*_gcl_au*NDY1NzU3NTQuMTc3MjQ4NDgyNQ..*_ga*ODk1MTkxNDAzLjE3NzI0ODQ4MjU.*_ga_JGQNCMRW7P*czE3NzI1NjUzNTQkbzIkZzAkdDE3NzI1NjUzNTQkajYwJGwwJGgw"
+    "url": "https://www.als.org/navigating-als/end-of-life-plans/advance-directives"
   },
   {
+    "date added": "04/06/2026",
     "title": "Advance Directives for ALS",
     "description": "Website with embedded videos, why to complete advance directives, what decisions need to be made, which forms to complete, where to find the forms, what else to do once these forms are filled.",
     "source": "YourALSGuide",
@@ -111,7 +107,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Advance Directives"
     ],
@@ -119,19 +114,18 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youralsguide.com/advance-directives.html",
-    "Reviewer Note": "Spanish Lanuage Link: https://es.lesturnerals.org/ela-y-nutricion/?_gl=1*1wzhvw4*_gcl_au*NDY1NzU3NTQuMTc3MjQ4NDgyNQ..*_ga*ODk1MTkxNDAzLjE3NzI0ODQ4MjU.*_ga_JGQNCMRW7P*czE3NzI1NjUzNTQkbzIkZzEkdDE3NzI1NjU0MDIkajEyJGwwJGgw"
+    "url": "https://www.youralsguide.com/advance-directives.html"
   },
   {
+    "date added": "04/06/2026",
     "title": "Advanced Care Planning for ALS",
-    "description": "Goes through a basic list of practical things that often are done at the end of life, including estate planning, advance directives, funeral planning, etc. ",
+    "description": "Goes through a basic list of practical things that often are done at the end of life, including estate planning, advance directives, funeral planning, etc.",
     "source": "IAmALS",
     "type": "Article",
     "category": [
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2b - if links in MDA handout can't be fixed",
     "topics": [
       "Financial Planning"
     ],
@@ -139,10 +133,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.iamals.org/resources/advanced-care-planning-for-als/?utm_source",
-    "Reviewer Note": ""
+    "url": "https://www.iamals.org/resources/advanced-care-planning-for-als/?utm_source"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS & Breathing",
     "description": "Printable handout describes breathing weakness, symptoms, non-invasive ventilation (CPAP/BiPAP), invasive ventilation (tracheostomy). Includes link to decision tools.",
     "source": "Les Turner",
@@ -151,7 +145,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -159,19 +152,18 @@
     "language": [
       "en"
     ],
-    "url": "https://lesturnerals.org/als-breathing-guide/",
-    "Reviewer Note": ""
+    "url": "https://lesturnerals.org/als-breathing-guide/"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS & Nutrition",
-    "description": "Printable handout about  nutrition, eating with swallowing challenges and feeding tubes. Includes link to decision tool.",
+    "description": "Printable handout about nutrition, eating with swallowing challenges and feeding tubes. Includes link to decision tool.",
     "source": "Les Turner",
     "type": "Article",
     "category": [
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -179,10 +171,10 @@
     "language": [
       "en"
     ],
-    "url": "https://lesturnerals.org/als-nutrition-guide/",
-    "Reviewer Note": ""
+    "url": "https://lesturnerals.org/als-nutrition-guide/"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS A Health Professionals Education Palliative Care 202 Course",
     "description": "Advanced course about palliative care and how to integrate it into your practice for ALS clinicians of any discipline",
     "source": "ALS Association",
@@ -191,7 +183,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": "1 for providers (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -201,10 +192,10 @@
     "language": [
       "en"
     ],
-    "url": "coming soon",
-    "Reviewer Note": ""
+    "url": "coming soon"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS and Palliative Care",
     "description": "Website that provides a short description of ALS, description of palliative care, how palliative works with ALS team, and links to finding palliative care.",
     "source": "GetPalliativeCare (CAPC)",
@@ -213,7 +204,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (text)",
     "topics": [
       "Definition"
     ],
@@ -221,10 +211,10 @@
     "language": [
       "en"
     ],
-    "url": "https://getpalliativecare.org/whatis/disease-types/als-palliative-care/",
-    "Reviewer Note": ""
+    "url": "https://getpalliativecare.org/whatis/disease-types/als-palliative-care/"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS Medical Decisions",
     "description": "Website with a list and brief description with links to learn more about ALS medical team, approved drugs, clinical trials, feeding tubes, tracheostomy and ventilator, and advance directives.",
     "source": "YourALSGuide",
@@ -233,7 +223,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Breathing Assistance Decisions",
       "Feeding Assistance Decisions",
@@ -243,10 +232,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youralsguide.com/medical-decisions.html",
-    "Reviewer Note": "NCA- Other than the bereavement group reminders, I didn't think the grief resources were all that rich. Liked the meditation app promo code idea but seemed out of place. "
+    "url": "https://www.youralsguide.com/medical-decisions.html"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS Resource Guide for Daily Living",
     "description": "Landing page for extensive resources about living with ALS and potential upcoming decisions",
     "source": "ALS Network",
@@ -255,7 +244,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2??",
     "topics": [
       "Advance Directives",
       "Feeding Assistance Decisions",
@@ -265,10 +253,10 @@
     "language": [
       "en"
     ],
-    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/",
-    "Reviewer Note": ""
+    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/"
   },
   {
+    "date added": "04/06/2026",
     "title": "ALS Respiratory Guide",
     "description": "Web page landing that leads to pages about various types of respiratory support devices",
     "source": "ALS Network",
@@ -277,7 +265,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -285,10 +272,10 @@
     "language": [
       "en"
     ],
-    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-respiratory-guide/",
-    "Reviewer Note": ""
+    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-respiratory-guide/"
   },
   {
+    "date added": "04/06/2026",
     "title": "ASK ME: ALS and Palliative Care webinar",
     "description": "Youtube webinar that covers the topics of: palliative care definition, advance care planning, advance directives, how palliative care is different from hospice, and available resources.",
     "source": "ALS Network",
@@ -297,7 +284,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Advance Directives"
     ],
@@ -305,10 +291,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc",
-    "Reviewer Note": ""
+    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc"
   },
   {
+    "date added": "04/06/2026",
     "title": "ASK ME: ALS and Palliative Care webinar",
     "description": "Youtube webinar that covers the topics of: palliative care definition, advance care planning, advance directives, how palliative care is different from hospice, and available resources.",
     "source": "ALS Network",
@@ -317,7 +303,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (video)",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -326,10 +311,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc",
-    "Reviewer Note": ""
+    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc"
   },
   {
+    "date added": "04/06/2026",
     "title": "ASK ME: When to Consider using a Feeding Tube",
     "description": "Youtube webinar about nutrition challenges, purpose of feeding tubes, process for placement, decision-making.",
     "source": "ALS Network",
@@ -338,7 +323,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -346,10 +330,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youtube.com/watch?v=l5mzqkYVrKk",
-    "Reviewer Note": "Spanish Lanuage Link: https://www.als.org/navigating-als/resources/explorar-la-opcion-de-los-cuidados-en-hospicio"
+    "url": "https://www.youtube.com/watch?v=l5mzqkYVrKk"
   },
   {
+    "date added": "04/06/2026",
     "title": "Bereavement Support",
     "description": "Website with description of bereavement, links to resources.",
     "source": "ALS Network",
@@ -358,7 +342,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "6- Can we have bereavement resources be a separate thing? This is good to have but not in end-of-life planning. ",
     "topics": [
       "Bereavement Support"
     ],
@@ -366,10 +349,10 @@
     "language": [
       "en"
     ],
-    "url": "https://alsnetwork.org/navigating-als/bereavement-support-program/",
-    "Reviewer Note": ""
+    "url": "https://alsnetwork.org/navigating-als/bereavement-support-program/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Breathing support for people with ALS: Decision Tool",
     "description": "Interactive decision tool including information about non-invasive ventilation (CPAP/BiPAP), how it works, perceived benefits, perceived risks, symptoms that may trigger need for non-invasive ventilation (CPAP/BiPAP), timing on starting, choosing no non-invasive ventilation (CPAP/BiPAP), and tools to help people think about what matters most.",
     "source": "Les Turner",
@@ -378,7 +361,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -386,10 +368,10 @@
     "language": [
       "en"
     ],
-    "url": "https://lesturnerals.org/respiratory/about-this-decision-tool/",
-    "Reviewer Note": ""
+    "url": "https://lesturnerals.org/respiratory/about-this-decision-tool/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Charting your Respiratory Care Plan",
     "description": "Website describing basics of respiratory, managing work of breathing, deciding on invasive ventilation, including when to stop, advance directives, and healthcare power of attorney.",
     "source": "ALS Association",
@@ -398,7 +380,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Advance Directives"
     ],
@@ -406,10 +387,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/webinars/supporting-your-breathing-als-what-expect-and-available-options",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/webinars/supporting-your-breathing-als-what-expect-and-available-options"
   },
   {
+    "date added": "04/06/2026",
     "title": "ELA y nutrición [Spanish]",
     "description": "Folleto imprimible sobre nutrición, alimentación en casos de dificultades para tragar y sondas de alimentación. Incluye un enlace a una herramienta de ayuda para la toma de decisiones.",
     "source": "Les Turner",
@@ -418,7 +399,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -426,11 +406,11 @@
     "language": [
       "es"
     ],
-    "url": "https://es.lesturnerals.org/ela-y-nutricion/",
-    "Reviewer Note": ""
+    "url": "https://es.lesturnerals.org/ela-y-nutricion/"
   },
   {
-    "title": "Explorando la opción de los cuidados paliativos [Spanish] ",
+    "date added": "04/06/2026",
+    "title": "Explorando la opción de los cuidados paliativos [Spanish]",
     "description": "Folleto con los 10 datos principales sobre los cuidados paliativos",
     "source": "ALS Association",
     "type": "Article",
@@ -438,7 +418,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -447,10 +426,10 @@
     "language": [
       "es"
     ],
-    "url": "https://www.als.org/navigating-als/resources/explorar-la-opcion-de-los-cuidados-en-hospicio",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/resources/explorar-la-opcion-de-los-cuidados-en-hospicio"
   },
   {
+    "date added": "04/06/2026",
     "title": "Exploring the Option of Hospice Care",
     "description": "Handout of top 10 facts about palliative care.",
     "source": "ALS Association",
@@ -459,7 +438,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -468,10 +446,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/resources/exploring-option-hospice-care",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/resources/exploring-option-hospice-care"
   },
   {
+    "date added": "04/06/2026",
     "title": "Feeding Tubes/Nutrition",
     "description": "Website with links to other resources about feeding tubes, social media groups about feeding tubes and two videos in which patient share their feeding tube experience.",
     "source": "IAmALS",
@@ -480,7 +458,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -488,10 +465,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.iamals.org/get-help/feeding-tubes-nutrition/",
-    "Reviewer Note": ""
+    "url": "https://www.iamals.org/get-help/feeding-tubes-nutrition/"
   },
   {
+    "date added": "04/06/2026",
     "title": "FYI: Planning for the Future",
     "description": "Printable handout: care planning (living wills, durable power of attorney, resuscitation (CPR/do not resuscitate), financial planning, estate planning.",
     "source": "ALS Association",
@@ -500,7 +477,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Advance Directives"
     ],
@@ -508,10 +484,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/resources/fyi-planning-future",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/resources/fyi-planning-future"
   },
   {
+    "date added": "04/06/2026",
     "title": "FYI: Planning for the Future",
     "description": "Printable handout: care planning (living wills, durable power of attorney, resuscitation (CPR/do not resuscitate), financial planning, estate planning.",
     "source": "ALS Association",
@@ -520,7 +496,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Financial Planning"
     ],
@@ -528,10 +503,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-11.pdf",
-    "Reviewer Note": "NCA - Has a lot of detail about the dying process. I'm not sure this is for everyone…maybe people who really like the knitty gritty. I do like the spiritual support section though. I think this is better suited to caregivers and not patients. Might scare the patients. It's also got some very technical sections - not for those with lower health literacy. Some of the details could likely be provided with coaching from a good hospice team meeting the patient or caregiver where they are at. The most important advice it gives is to accept hospice and anticipatory grief. "
+    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-11.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "General questions about palliative care",
     "description": "Multiple videos about palliative care in general including definition, when to start palliative, who provides it, advance directives, power of attorney, benefits of palliative care.",
     "source": "Roon",
@@ -540,7 +515,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Advance Directives"
     ],
@@ -548,10 +522,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G ",
-    "Reviewer Note": ""
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G"
   },
   {
+    "date added": "04/06/2026",
     "title": "General questions about palliative care",
     "description": "Multiple videos about palliative care in general including definition, when to start palliative, who provides it, advance directives, power of attorney, benefits of palliative care.",
     "source": "Roon",
@@ -560,7 +534,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (video)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -570,10 +543,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G",
-    "Reviewer Note": ""
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G"
   },
   {
+    "date added": "04/06/2026",
     "title": "Grief, Mental Health, and a Sprinkle of Hope",
     "description": "Website wtih webinar about grief and mental health support",
     "source": "ALS Association",
@@ -582,7 +555,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -591,10 +563,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/webinars/grief-mental-health-and-sprinkle-hope",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/webinars/grief-mental-health-and-sprinkle-hope"
   },
   {
+    "date added": "04/06/2026",
     "title": "Hospice Care",
     "description": "Website describing hospice with a youtube video.",
     "source": "ALS Association",
@@ -603,7 +575,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -613,10 +584,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/end-of-life-plans/hospice-care",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/end-of-life-plans/hospice-care"
   },
   {
+    "date added": "04/06/2026",
     "title": "Hospice Care for ALS",
     "description": "Description about preparing for hospice including advance directives, getting equipment first, getting feeding tube first.",
     "source": "YourALSGuide",
@@ -625,7 +596,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Feeding Assistance Decisions",
       "Advance Directives"
@@ -634,10 +604,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youralsguide.com/hospice-care.html",
-    "Reviewer Note": ""
+    "url": "https://www.youralsguide.com/hospice-care.html"
   },
   {
+    "date added": "04/06/2026",
     "title": "Hospice Care for ALS",
     "description": "Description about hospice, eligibility, what they provide, how to get started, getting equipment before enrolling.",
     "source": "YourALSGuide",
@@ -646,7 +616,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -655,19 +624,18 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youralsguide.com/hospice-care.html",
-    "Reviewer Note": ""
+    "url": "https://www.youralsguide.com/hospice-care.html"
   },
   {
+    "date added": "04/06/2026",
     "title": "How Palliative Care Can Support Your Health Journey",
-    "description": "Quest Magazine article on Palliative Care. ",
+    "description": "Quest Magazine article on Palliative Care.",
     "source": "Muscular Dystrophy Association (MDA)",
     "type": "Article",
     "category": [
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -677,10 +645,10 @@
     "language": [
       "en"
     ],
-    "url": "https://mdaquest.org/how-palliative-care-can-support-your-health-journey/",
-    "Reviewer Note": ""
+    "url": "https://mdaquest.org/how-palliative-care-can-support-your-health-journey/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Identifying and Communicating your values worksheet",
     "description": "Printable worksheet to identify and apply your values and goals to your healthcare.",
     "source": "IAmALS",
@@ -689,7 +657,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Advance Directives"
     ],
@@ -697,10 +664,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.iamals.org/wp-content/uploads/2020/10/Identifying-Your-Values-Checklist.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.iamals.org/wp-content/uploads/2020/10/Identifying-Your-Values-Checklist.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "La ELA y la respiración [Spanish]",
     "description": "Un folleto imprimible describe la debilidad respiratoria, sus síntomas, la ventilación no invasiva (CPAP/BiPAP) y la ventilación invasiva (traqueostomía). Incluye un enlace a herramientas de ayuda para la toma de decisiones.",
     "source": "Les Turner",
@@ -709,7 +676,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": 1,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -717,10 +683,10 @@
     "language": [
       "es"
     ],
-    "url": "https://es.lesturnerals.org/ela-y-la-respiracion/",
-    "Reviewer Note": ""
+    "url": "https://es.lesturnerals.org/ela-y-la-respiracion/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Living fully, living well: Palliative care approaches in ALS",
     "description": "Youtube webinar about palliative care and its benefits.",
     "source": "ALS Association",
@@ -729,7 +695,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": "1 for patients&carepartners (video)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -739,10 +704,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/webinars/living-fully-living-well-palliative-care-approaches-als",
-    "Reviewer Note": "NCA - Discussion of palliative care vs hospice seems less important and wouldn't have led with that. I like the links to legacy work and the linkable access to state-specific advance directives. Maybe the fact that this is from the MDA might be misleading for people with ALS? The links also link to email rather than website. Someone who is not savvy with tech will have a hard time finding the links."
+    "url": "https://www.als.org/webinars/living-fully-living-well-palliative-care-approaches-als"
   },
   {
+    "date added": "04/06/2026",
     "title": "Living Well with ALS",
     "description": "Youtube webinar about palliative care and hospice, their benefits, and making complex decisions.",
     "source": "ALS Association",
@@ -751,7 +716,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -761,10 +725,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/webinars/living-well-als-how-palliative-care-can-help-support-people-facing-als",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/webinars/living-well-als-how-palliative-care-can-help-support-people-facing-als"
   },
   {
+    "date added": "04/06/2026",
     "title": "Living with ALS Resource Guide 11: Approaching end of life in ALS",
     "description": "Printable guide with talking about end of life, what to expect, spiritual support, anticipatory grief and bereavement, epectations and fears, counseling/psychotherapy, leaving a legacy.",
     "source": "ALS Association",
@@ -773,7 +737,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -782,10 +745,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-11.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-11.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Living with ALS: Planning and Decision Making",
     "description": "Printable resource guide/manual with palliative care mentioned as a resource.",
     "source": "ALS Association",
@@ -794,7 +757,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -804,10 +766,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-4.pdf#page=16",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-4.pdf#page=16"
   },
   {
+    "date added": "04/06/2026",
     "title": "Living with ALS: Planning and Decision Making",
     "description": "Printable resource guide/manual with palliative care mentioned as a resource.",
     "source": "ALS Association",
@@ -816,7 +778,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "see reviewer note",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different"
@@ -825,10 +786,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-4.pdf#page=16",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-4.pdf#page=16"
   },
   {
+    "date added": "04/06/2026",
     "title": "Maintaining Pulmonary Function with ALS",
     "description": "Print-ready handout for patients and families on pulmonary care for ALS.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -837,7 +798,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -845,10 +805,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/sites/default/files/2021/12/Maintaining-Breathing-Function-with-ALS.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2021/12/Maintaining-Breathing-Function-with-ALS.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Mantener la función pulmonar con ELA [Spanish]",
     "description": "Folleto listo para imprimir, dirigido a pacientes y familias, sobre el cuidado pulmonar en la ELA.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -857,7 +817,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -865,19 +824,18 @@
     "language": [
       "es"
     ],
-    "url": "https://www.mda.org/sites/default/files/2022/01/Maintaining-Breathing-Function-with-ALS_en-espanol.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2022/01/Maintaining-Breathing-Function-with-ALS_en-espanol.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Navigating Grief Before and After Loss in ALS",
-    "description": "Website with ways to manage grief for caregivers ",
+    "description": "Website with ways to manage grief for caregivers",
     "source": "ALS Association",
     "type": "Article",
     "category": [
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -886,10 +844,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/resources-support/navigating-grief",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/resources-support/navigating-grief"
   },
   {
+    "date added": "04/06/2026",
     "title": "Not Gloom and Doom: Demystifying Hospice",
     "description": "Article describing hospice, advocating for benefits, discussing costs and eligibility, location of care delivery, list of hospice resources.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -898,7 +856,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -907,10 +864,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/alsn/article/not-gloom-and-doom-demystifying-hospice",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/alsn/article/not-gloom-and-doom-demystifying-hospice"
   },
   {
+    "date added": "04/06/2026",
     "title": "Nutrition and Swallowing in ALS",
     "description": "Printable website about nutrition, calories, food modifications, hydration, and intro to feeding tubes.",
     "source": "ALS Network",
@@ -919,7 +876,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -927,10 +883,10 @@
     "language": [
       "en"
     ],
-    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-nutrition/",
-    "Reviewer Note": ""
+    "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-nutrition/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Nutrition support for people with ALS: Decision Tool",
     "description": "Interactive decision tool including information about what feeding tubes are, how they're placed, caring for it, perceived benefits, perceived risks, symptoms that may trigger need for tubes, timing on starting, choosing no tube, what matters most.",
     "source": "Les Turner",
@@ -939,7 +895,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -947,10 +902,10 @@
     "language": [
       "en"
     ],
-    "url": "https://lesturnerals.org/nutrition/about-this-decision-tool/",
-    "Reviewer Note": ""
+    "url": "https://lesturnerals.org/nutrition/about-this-decision-tool/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative and Hospice Care for ALS",
     "description": "Description about palliative care vs hospice.",
     "source": "IAmALS",
@@ -959,7 +914,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -969,10 +923,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/",
-    "Reviewer Note": ""
+    "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative and Hospice Care for ALS",
     "description": "Desciption about palliative care vs hospice.",
     "source": "IAmALS",
@@ -981,7 +935,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -991,10 +944,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/",
-    "Reviewer Note": ""
+    "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative Care can be a Vital Support in ALS and other Neuromuscular Diseases - MDA Monthly Report Feature Article May 2022",
     "description": "MDA Monthly Report Featured Article: description about palliative care, benefits for care partners, timing of palliative care.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -1003,7 +956,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "3 (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1013,19 +965,18 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/sites/default/files/2022/05/MDA-Monthly-Report-Palliative-Care-can-be-a-Vital-Support-in-ALS-Feature-Article-May-2022.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2022/05/MDA-Monthly-Report-Palliative-Care-can-be-a-Vital-Support-in-ALS-Feature-Article-May-2022.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative Care Directory",
-    "description": "Online directory of palliative care programs with particular experience caring for people with ALS. ",
+    "description": "Online directory of palliative care programs with particular experience caring for people with ALS.",
     "source": "ALS Association",
     "type": "Article",
     "category": [
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2 (text)",
     "topics": [
       "Benefits, Timing, and Who Provides It"
     ],
@@ -1033,10 +984,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/living-with-als/therapies-care/palliative-care",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/living-with-als/therapies-care/palliative-care"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative Care Explained: ALS A Health Professionals Education Course",
     "description": "Introductory course about palliative care for ALS clinicians of any discipline",
     "source": "ALS Association",
@@ -1045,7 +996,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": "1 for providers (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1055,10 +1005,10 @@
     "language": [
       "en"
     ],
-    "url": "https://share.articulate.com/ypAK1ZQ6KabHAbC9s6JZK",
-    "Reviewer Note": ""
+    "url": "https://share.articulate.com/ypAK1ZQ6KabHAbC9s6JZK"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative Care for ALS",
     "description": "Website with information about palliative care and how it can be helpful to people facing ALS.",
     "source": "ALS Association",
@@ -1067,7 +1017,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "Y",
-    "Priority Level (1, 2, 3)": "1 for patients&carepartners (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1077,11 +1026,11 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/navigating-als/living-als/therapies-care/palliative-care-als",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/navigating-als/living-als/therapies-care/palliative-care-als"
   },
   {
-    "title": "Palliative Care for People with ALS – Tips, Benefits, Overview -  Your ALS Guide",
+    "date added": "04/06/2026",
+    "title": "Palliative Care for People with ALS – Tips, Benefits, Overview - Your ALS Guide",
     "description": "Website description of what palliative care is with links to other website.",
     "source": "YourALSGuide",
     "type": "Article",
@@ -1089,7 +1038,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "3 (text)",
     "topics": [
       "Definition"
     ],
@@ -1097,10 +1045,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.youralsguide.com/palliative-care.html",
-    "Reviewer Note": ""
+    "url": "https://www.youralsguide.com/palliative-care.html"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative care for people with ALS | NEALS",
     "description": "Webinar describing palliative care for patients and care partners.",
     "source": "Northeast Amyotrophic Lateral Sclerosis Consortium | NEALS",
@@ -1109,7 +1057,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "link doesn't work",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1119,10 +1066,10 @@
     "language": [
       "en"
     ],
-    "url": "https://neals.org/educational-webinars/palliative-care-for-people-with-als/",
-    "Reviewer Note": ""
+    "url": "https://neals.org/educational-webinars/palliative-care-for-people-with-als/"
   },
   {
+    "date added": "04/06/2026",
     "title": "Palliative Care in Neuromuscular Disease: Thinking Beyond Death and Dying",
     "description": "MDA Monthly Report Featured Article: description about palliative care.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -1131,7 +1078,6 @@
       "Palliative Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "3 (text)",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different"
@@ -1140,10 +1086,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/sites/default/files/2019/10/MDA_Monthly_Report_Monthly_Feature_November_Full_Article.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2019/10/MDA_Monthly_Report_Monthly_Feature_November_Full_Article.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Planning for End-of-Life Care",
     "description": "Print-ready handout providing an overview of major care considerations for end-of-life care (advocating for benefits, costs and eligibility, location of care delivery, list of hospice resources) including the difference between palliative and hospice care.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -1152,7 +1098,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 2,
     "topics": [
       "Breathing Assistance Decisions",
       "Feeding Assistance Decisions",
@@ -1162,10 +1107,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Planning for End-of-Life Care",
     "description": "Print-ready handout providing an overview of major care considerations for end-of-life care (advocating for benefits, costs and eligibility, location of care delivery, list of hospice resources) including the difference between palliative and hospice care.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -1174,7 +1119,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "2a - if links can be fixed; if not, would place lower (#5)",
     "topics": [
       "Legacy Work",
       "Financial Planning"
@@ -1183,10 +1127,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Planning for End-of-Life Care",
     "description": "Print-ready handout providing an overview of major care considerations for end-of-life care (advocating for benefits, costs and eligibility, location of care delivery, list of hospice resources) including the difference between palliative and hospice care.",
     "source": "Muscular Dystrophy Association (MDA)",
@@ -1195,7 +1139,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1205,10 +1148,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf",
-    "Reviewer Note": ""
+    "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf"
   },
   {
+    "date added": "04/06/2026",
     "title": "Questions about end of life and hospice",
     "description": "Multiple videos on end-of-life care and planning, covering CPR and DNR decisions, prognosis, palliative care and hospice, and ensuring personal wishes are honored. Topics also include grief and bereavement, coping and family conversations, maintaining hope, meaning and legacy-making, what to expect from hospice (including medications), and supportive online resources.",
     "source": "Roon",
@@ -1217,7 +1160,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Advance Directives"
     ],
@@ -1225,10 +1167,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE",
-    "Reviewer Note": ""
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE"
   },
   {
+    "date added": "04/06/2026",
     "title": "Questions about end of life and hospice",
     "description": "Multiple videos on end-of-life care and planning, covering CPR and DNR decisions, prognosis, palliative care and hospice, and ensuring personal wishes are honored. Topics also include grief and bereavement, coping and family conversations, maintaining hope, meaning and legacy-making, what to expect from hospice (including medications), and supportive online resources.",
     "source": "Roon",
@@ -1237,7 +1179,6 @@
       "Hospice Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1247,10 +1188,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE",
-    "Reviewer Note": ""
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE"
   },
   {
+    "date added": "04/06/2026",
     "title": "Questions about end of life and hospice",
     "description": "Multiple videos on end-of-life care and planning, covering CPR and DNR decisions, prognosis, palliative care and hospice, and ensuring personal wishes are honored. Topics also include grief and bereavement, coping and family conversations, maintaining hope, meaning and legacy-making, what to expect from hospice (including medications), and supportive online resources.",
     "source": "Roon",
@@ -1259,7 +1200,6 @@
       "End-of-Life Care"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": "4 - some user interface issues",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -1268,10 +1208,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE",
-    "Reviewer Note": ""
+    "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE"
   },
   {
+    "date added": "04/06/2026",
     "title": "Questions about tracheostomy and ventilators",
     "description": "Videos about invasive ventilators (CPAP/BiPAP).",
     "source": "Roon",
@@ -1280,7 +1220,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -1288,10 +1227,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.roon.com/als/explore/breathing-PGLnVyH9hGguE2nzDQBB45/tracheostomy---ventilators-RrZwkfizvhz5oXfWksUS72",
-    "Reviewer Note": ""
+    "url": "https://www.roon.com/als/explore/breathing-PGLnVyH9hGguE2nzDQBB45/tracheostomy---ventilators-RrZwkfizvhz5oXfWksUS72"
   },
   {
+    "date added": "04/06/2026",
     "title": "Remembering the Big Picture - Collaborative Purposeful, and Informed Planning",
     "description": "Website with information about care planning with video(s)",
     "source": "ALS Association",
@@ -1300,7 +1239,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Advance Directives"
     ],
@@ -1308,10 +1246,10 @@
     "language": [
       "en"
     ],
-    "url": "https://www.als.org/webinars/remembering-big-picture-collaborative-purposeful-and-informed-planning",
-    "Reviewer Note": ""
+    "url": "https://www.als.org/webinars/remembering-big-picture-collaborative-purposeful-and-informed-planning"
   },
   {
+    "date added": "04/06/2026",
     "title": "Tracheostomy and ALS",
     "description": "Printable website with description of tracheostomy, links to resources.",
     "source": "IAmALS",
@@ -1320,7 +1258,6 @@
       "Advance Care Planning"
     ],
     "Recommend (Y/N)": "N",
-    "Priority Level (1, 2, 3)": 3,
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -1328,7 +1265,6 @@
     "language": [
       "en"
     ],
-    "url": "https://www.iamals.org/get-help/tracheostomy-and-als/",
-    "Reviewer Note": ""
+    "url": "https://www.iamals.org/get-help/tracheostomy-and-als/"
   }
 ]

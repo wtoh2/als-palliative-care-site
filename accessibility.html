@@ -28,7 +28,7 @@
         <nav class="header-right">
           <a href="accessibility.html" class="access-link">
             <img src="assets/images/AI_EyeTracker.png" alt="" aria-hidden="true" class="access-icon" />
-            <span>Using This Site</span>
+            <span>About This Site</span>
           </a>
           <a href="index.html" class="access-link">
             <img src="assets/images/AI_Home.png" alt="" aria-hidden="true" class="access-icon" />
@@ -56,32 +56,31 @@
       <section class="resources">
 
         <header class="resources-header">
-          <h1 class="resources-title">Accessibility & Using This Site</h1>
+          <h1 class="resources-title">About This Site</h1>
         </header>
 
         <!-- Intro -->
         <section>
           <p>
-            This site is designed to support eye-tracking systems and other assistive technologies that act like a mouse or keyboard. The goal is to enable
-            accessibility through native user interface design, while complementing your device’s own accessibility settings.
+            This site is intentionally designed to support eye-tracking systems and augmentative and assistive communication (AAC) technologies that act like a mouse or keyboard. 
           </p>
         </section>
 
         <!-- How to Navigate -->
         <section>
-          <h2>How to Navigate the Site</h2>
+          <h2>Site Navigation</h2>
           <ul>
             <li>All clickable elements are presented as <strong>large selectable buttons</strong>.</li>
             <li>
-              <strong>Focusing</strong> on a button highlights it, but activation only occurs when your device sends a <strong>click/selection</strong> command.
+              <strong>Focusing</strong> on a button highlights it, but activation only occurs when a <strong>click/selection</strong> command is sent.
               <ul>
                 <li>A visible <span class="focus-indicator">highlight / outline change</span> indicates when a button is focused.</li>
                 <li>A <span class="activation-indicator">yellow ring</span> appears to confirm when a button has been activated.</li>
               </ul>
             </li>
             <li>
-              Where needed, <strong>vertical scroll buttons</strong> (<span class="scroll-indicator" aria-hidden="true"> ▲ ▼ 
-              </span>) are provided as an alternative to continuous scrolling.
+              <strong>Vertical scroll buttons</strong> (<span class="scroll-indicator" aria-hidden="true"> ▲ ▼ 
+              </span>) are available on pages where resources are listed as an alternative to continuous scrolling.
             </li>
             <li>Take your time. Nothing happens automatically or without your input.</li>
           </ul>
@@ -102,30 +101,72 @@
         </section>
 
         <section>
+          <h2 id="privacy">Privacy & Analytics</h2>
+
+          <p>
+            Your privacy matters. This site does <strong>NOT</strong> collect or store personal information such as names, email/IP addresses, location, or identifying data. 
+            Basic, anonymous usage data is collected in a manner fully compliant with GDPR, CCPA and PECR, and does not involve the use of cookies or similar tracking technologies.
+            Specifically, this includes: 
+          </p>
+
+          <ul>
+            <li>Number of website visits over time</li>
+            <li>Which filters and navigation paths are most used</li>
+            <li>How often each resource is clicked over time</li>
+            <li>Referring websites (e.g., did you come from INPCS or search engine)</li>
+          </ul>
+
+          <p>
+            This information is aggregated and may be used to understand how the site is being used and to improve usability. 
+          </p>
+        </section>
+
+        <section>
           <h2>Feedback & Accessibility Issues</h2>
           <p>
-            If you have trouble using the site, notice something could work better, or have suggestions for 
-            improving accessibility, please contact the site managers.
+              If anything feels difficult to use, you notice any errors, or if you have suggestions for how we can improve this website, we would love to hear from you.
           </p>
 
           <div class="access-actions">
             <a
-              class="access-link large-contact-btn"
-              href="mailto:wtoh2@jhu.edu,amehta23@jhmi.edu"
+              class="btn btn-primary"
+              href="mailto:wtoh2@jhu.edu,amehta23@jhmi.edu?subject=%5BALSPalliativeResources.org%5D"
             >
-              Contact the Site Managers
+              Contact The Site Managers
+            </a>
+          </div>
+
+          </div>
+        </section>
+
+        <section>
+          <h2>For Developers</h2>
+
+          <p>
+            If you are interested in building gaze-accessible or AAC-friendly websites, we have compiled a set of practical design principles we used to guide the development of this site. 
+            These principles are based on general WCAG guidelines, and recommendations from experts in accessible communication solutions for individuals with ALS. 
+          </p>
+
+          <div class="access-actions developer-actions">
+            
+            <a
+              href="assets/docs/Gaze_Accessible_Web_Design_Principles_0102_2026.pdf"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener"
+            >
+              View Our 7 Design Principles (PDF)
             </a>
 
             <a
-              href="assets/docs/Gaze_Accessible_Web_Design_Principles_0102_2026.pdf"
-              class="access-link developer-btn"
+              href="https://github.com/wtoh2/als-palliative-care-site"
+              class="btn btn-secondary"
               target="_blank"
               rel="noopener"
-              aria-label="Open PDF: Gaze-accessible design principles (opens in a new tab)"
             >
-              Web Developer Interested in Building Gaze-Accessible Sites?
-              Here is a list of the <span class="tech-highlight">7 Technical Design Principles</span> we used. 
+              View Source Code on GitHub
             </a>
+
           </div>
         </section>
 
@@ -137,7 +178,7 @@
     <p>
       This website is not an official Johns Hopkins University website and does not
       represent institutional policy. © 2025. <br>Anonymous analytics are collected to improve the site. 
-      No personal information is collected.<a href="using-this-site.html">Learn more.</a>
+      No personal information is collected.<a href="accessibility.html#privacy">Learn more.</a>
     </p>
     </footer>
 
