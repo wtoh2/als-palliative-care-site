@@ -1,5 +1,28 @@
 [
   {
+    "Timestamp": "4/6/2026 19:02:39",
+    "title": "test",
+    "description": "test",
+    "source": "test",
+    "type": "Video(s)",
+    "category": [
+      "End-of-Life Care"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "test",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
+    "topics": [],
+    "Recommend (Y/N)": "Y",
+    "Verified": "Yes"
+  },
+  {
     "Timestamp": "",
     "title": "10 cosas que debe saber: Comprender los cuidados paliativos [Spanish]",
     "description": "Folleto imprimible que describe 10 datos y consejos sobre cuidados paliativos para personas con ELA y sus familias.",
@@ -8,13 +31,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "es"
     ],
     "url": "https://www.als.org/navigating-als/resources/cuidados-paliativos",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -31,13 +56,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/sites/default/files/2025-08/10%20things%20to%20know%20-%20Advance%20Care%20Planning%20%28ACP%29.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -53,13 +80,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/sites/default/files/2025-08/10%20things%20to%20Know-%20Grief.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -76,13 +105,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/resources/understanding-palliative-care",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -99,13 +130,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/end-of-life-plans/advance-directives",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -121,13 +154,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youralsguide.com/advance-directives.html",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -143,13 +178,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.iamals.org/resources/advanced-care-planning-for-als/?utm_source",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Financial Planning"
     ],
@@ -165,13 +202,16 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://lesturnerals.org/als-breathing-guide/",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -187,39 +227,18 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://lesturnerals.org/als-nutrition-guide/",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions"
-    ],
-    "Recommend (Y/N)": "Y",
-    "Verified": "Yes"
-  },
-  {
-    "Timestamp": "",
-    "title": "ALS A Health Professionals Education Palliative Care 202 Course",
-    "description": "Advanced course about palliative care and how to integrate it into your practice for ALS clinicians of any discipline",
-    "source": "ALS Association",
-    "type": "Article",
-    "category": [
-      "Palliative Care"
-    ],
-    "Your Email": "",
-    "Additional Notes": "",
-    "language": [
-      "en"
-    ],
-    "url": "coming soon",
-    "users (patients&carepartners, providers)": "providers",
-    "topics": [
-      "Definition",
-      "How Palliative Care and Hospice are Different",
-      "Benefits, Timing, and Who Provides It"
     ],
     "Recommend (Y/N)": "Y",
     "Verified": "Yes"
@@ -233,13 +252,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://getpalliativecare.org/whatis/disease-types/als-palliative-care/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition"
     ],
@@ -255,13 +276,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youralsguide.com/medical-decisions.html",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions",
       "Feeding Assistance Decisions",
@@ -279,13 +302,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives",
       "Feeding Assistance Decisions",
@@ -303,13 +328,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-respiratory-guide/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -325,13 +352,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -347,13 +376,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -370,13 +401,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youtube.com/watch?v=l5mzqkYVrKk",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -392,13 +425,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://alsnetwork.org/navigating-als/bereavement-support-program/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Bereavement Support"
     ],
@@ -414,13 +449,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://lesturnerals.org/respiratory/about-this-decision-tool/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -436,13 +473,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/webinars/supporting-your-breathing-als-what-expect-and-available-options",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -458,13 +497,16 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "es"
     ],
     "url": "https://es.lesturnerals.org/ela-y-nutricion/",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -480,13 +522,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "es"
     ],
     "url": "https://www.als.org/navigating-als/resources/explorar-la-opcion-de-los-cuidados-en-hospicio",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -503,13 +547,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/resources/exploring-option-hospice-care",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -526,13 +572,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.iamals.org/get-help/feeding-tubes-nutrition/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -548,13 +596,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/resources/fyi-planning-future",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -570,13 +620,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-11.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Financial Planning"
     ],
@@ -592,13 +644,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -614,13 +668,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/general-ALRN3ih7azQwfArYy6kG3G",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -638,13 +694,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/webinars/grief-mental-health-and-sprinkle-hope",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -661,13 +719,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/end-of-life-plans/hospice-care",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -685,13 +745,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youralsguide.com/hospice-care.html",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions",
       "Advance Directives"
@@ -708,13 +770,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youralsguide.com/hospice-care.html",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -731,13 +795,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://mdaquest.org/how-palliative-care-can-support-your-health-journey/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -755,13 +821,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.iamals.org/wp-content/uploads/2020/10/Identifying-Your-Values-Checklist.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -777,13 +845,16 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "es"
     ],
     "url": "https://es.lesturnerals.org/ela-y-la-respiracion/",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -799,13 +870,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/webinars/living-fully-living-well-palliative-care-approaches-als",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -823,13 +896,16 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/webinars/living-well-als-how-palliative-care-can-help-support-people-facing-als",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -847,13 +923,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-11.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -870,13 +948,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-4.pdf#page=16",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -894,13 +974,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/sites/default/files/2022-10/Resource-Guide-4.pdf#page=16",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different"
@@ -917,13 +999,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/sites/default/files/2021/12/Maintaining-Breathing-Function-with-ALS.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -939,13 +1023,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "es"
     ],
     "url": "https://www.mda.org/sites/default/files/2022/01/Maintaining-Breathing-Function-with-ALS_en-espanol.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -961,13 +1047,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/resources-support/navigating-grief",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -984,13 +1072,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/alsn/article/not-gloom-and-doom-demystifying-hospice",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "Benefits, Timing, and Who Provides It"
@@ -1007,13 +1097,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://alsnetwork.org/navigating-als/living-with-als/resource-guides-for-daily-living/als-nutrition/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -1029,13 +1121,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://lesturnerals.org/nutrition/about-this-decision-tool/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Feeding Assistance Decisions"
     ],
@@ -1051,13 +1145,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1075,13 +1171,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.iamals.org/get-help/palliative-and-hospice-care-for-als/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1099,13 +1197,16 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/sites/default/files/2022/05/MDA-Monthly-Report-Palliative-Care-can-be-a-Vital-Support-in-ALS-Feature-Article-May-2022.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1123,13 +1224,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/living-with-als/therapies-care/palliative-care",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Benefits, Timing, and Who Provides It"
     ],
@@ -1145,13 +1248,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://share.articulate.com/ypAK1ZQ6KabHAbC9s6JZK",
-    "users (patients&carepartners, providers)": "providers",
+    "users (patients&carepartners, providers)": [
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1169,13 +1274,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/navigating-als/living-als/therapies-care/palliative-care-als",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1193,13 +1300,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.youralsguide.com/palliative-care.html",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition"
     ],
@@ -1215,13 +1324,15 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://neals.org/educational-webinars/palliative-care-for-people-with-als/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1239,13 +1350,16 @@
     "category": [
       "Palliative Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/sites/default/files/2019/10/MDA_Monthly_Report_Monthly_Feature_November_Full_Article.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different"
@@ -1262,13 +1376,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions",
       "Feeding Assistance Decisions",
@@ -1286,13 +1402,15 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Legacy Work",
       "Financial Planning"
@@ -1309,13 +1427,15 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.mda.org/sites/default/files/2024/03/Planning-for-End-of-Life-Care.pdf",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1333,13 +1453,16 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -1355,13 +1478,16 @@
     "category": [
       "Hospice Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Definition",
       "How Palliative Care and Hospice are Different",
@@ -1379,13 +1505,16 @@
     "category": [
       "End-of-Life Care"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.roon.com/als/explore/palliative-care-PysUCeAcfQijStXYG3zBYs/end-of-life---hospice-CNzEULn6qEvqYxnzjsw2AE",
-    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners",
+      "providers"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Bereavement Support",
       "Legacy Work"
@@ -1402,13 +1531,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.roon.com/als/explore/breathing-PGLnVyH9hGguE2nzDQBB45/tracheostomy---ventilators-RrZwkfizvhz5oXfWksUS72",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
@@ -1424,13 +1555,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.als.org/webinars/remembering-big-picture-collaborative-purposeful-and-informed-planning",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Advance Directives"
     ],
@@ -1446,13 +1579,15 @@
     "category": [
       "Advance Care Planning"
     ],
-    "Your Email": "",
-    "Additional Notes": "",
     "language": [
       "en"
     ],
     "url": "https://www.iamals.org/get-help/tracheostomy-and-als/",
-    "users (patients&carepartners, providers)": "patients&carepartners",
+    "users (patients&carepartners, providers)": [
+      "patients&carepartners"
+    ],
+    "submitter's email": "",
+    "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
     ],
