@@ -2,7 +2,7 @@ name: Update Resources JSON
 
 on:
   schedule:
-    - cron: "0 */2 * * *"   # every 2 hours
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,16 +25,15 @@ jobs:
         run: pip install pandas
 
       - name: Run script
-        run: python excel_to_json.py
+        run: python assets/data/excel_to_json.py
 
       - name: Commit & push if changed
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add resources.json
+          git add assets/data/resources.json
 
-          # Only commit if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update resources.json"
             git push
