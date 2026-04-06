@@ -8,7 +8,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 OUTPUT_JSON = SCRIPT_DIR / "resources.json"
 
-GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1uNRJs05HKs0zt11cCPilnJ4Q6Dcd7pWI8P-MV7i34Lg/export?format=csv&gid=0"
+GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1uNRJs05HKs0zt11cCPilnJ4Q6Dcd7pWI8P-MV7i34Lg/export?format=csv&gid=925889505"
 
 # Load data
 df = pd.read_csv(GOOGLE_SHEET_CSV_URL)
