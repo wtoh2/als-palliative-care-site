@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap");
 
+html {
+  font-size: clamp(15px, 2.75vh, 22px);
+}
+
 body {
   margin: 0;
   display: flex;
@@ -30,7 +34,7 @@ main {
 .header-inner {
   max-width: 95%;
   margin: 0 auto;
-  padding: 0.6rem clamp(1.25rem, 4vw, 3rem);
+  padding: 0.6rem clamp(1rem, 2vw, 2rem);
 
   display: flex;
   align-items: center;
@@ -74,11 +78,17 @@ main {
   font-size: 1.05rem;
   padding: 0.35rem 0.9rem;
   background: #eef2f7;
-  border: 2px solid #d1d5db;
+  border: 1.5px solid #d1d5db;
 
   color: #002d62;
   text-decoration: none;
   border-radius: 6px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;  /* space between buttons */
 }
 
 .header-right a:focus,
@@ -108,7 +118,7 @@ main {
 }
 
 .hero {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
 
   padding-top: 2rem;    
@@ -117,9 +127,27 @@ main {
   padding-right: 3.5rem;
 
   display: grid;
-  grid-template-columns: minmax(720px, 2.2fr) 0.8fr;
+  grid-template-columns: minmax(40rem, 2.8fr) 1fr;
   align-items: center;
   gap: 2.5rem;
+}
+
+.hero p a {
+  color: #1b78ea;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-bottom: 2px solid rgba(27, 120, 234, 0.35);
+  transition: all 0.1s ease;
+}
+.hero p a:hover {
+  color: #0a2a5e;
+  border-bottom-color: #0a2a5e;
+}
+
+.hero p a:focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
 }
 
 /* Outlined hero headline */
@@ -145,14 +173,18 @@ main {
 /* Supporting text */
 .hero p {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(1.3rem, 1.6vw, 1.6rem);
-  max-width: 90%;
+  font-size: 1rem;
+  max-width: 100%;
   line-height: 1.6;
 
   color: #1f2937;
   
   hyphens: none;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p + p {
+  margin-top: 0.75rem;   /* tighter gap between paragraphs */
 }
 
 .hero p .emphasis {
@@ -165,16 +197,19 @@ main {
   display: flex;
   align-items: center;
   gap: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
+  min-height: 40px;
 
-  font-family: "Archivo Black", sans-serif;
-  font-size: clamp(1.5rem, 1.4vw, 2.00rem);
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -182,7 +217,7 @@ main {
            clamp(2.4rem, 3vw, 3.2rem);
 
   border-radius: 0.3rem;
-  border: 3px solid #0a2a5e;
+  border: 2px solid #0a2a5e;
   background: transparent;
   color: #0a2a5e;
 
@@ -215,9 +250,9 @@ main {
 
 .hero-visual img {
   max-width: 100%;
-  max-height: clamp(480px, 35vw, 650px);
+  max-height: clamp(400px, 70vh, 600px);
   height: auto;
-  opacity: 0.95;
+  opacity: 0.80;
 }
 
 @media (max-width: 900px) {
@@ -238,15 +273,27 @@ main {
 .site-footer {
   margin-top: auto;
   background-color: #0a2a5e;
-  padding: 0.75rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .site-footer p {
   margin: 0;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.75rem;   /* slightly smaller, not tiny */
+  color: rgba(255, 255, 255, 0.75); /* softer */
+  line-height: 1.4;     /* tighter spacing */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: underline;
+  margin-left: 0.4rem;
+}
+
+.site-footer a:hover {
   color: #ffffff;
-  font-family: "Inter", system-ui, sans-serif;
 }
 
 /* ===== Scroll Buttons ===== */
@@ -261,7 +308,7 @@ main {
   font-size: 1.4rem;
 
   border-radius: 8px;
-  border: 3px solid #0a2a5e;
+  border: 1.5px solid #0a2a5e;
   background: #0a2a5e;
   color: #ffffff;
 
@@ -326,12 +373,15 @@ main {
   padding: 0.6rem 1rem;
   position: relative; /* REQUIRED for dashed line */
   background: #ffffff;
-  border: 2px solid #0a2a5e;
+  border: 1.5px solid #0a2a5e;
+  border-radius: 8px; 
 
   text-decoration: none;
   color: #0a2a5e;
 
   transition: background-color 0.15s ease, transform 0.05s ease;
+  box-shadow:
+    0 3px 0 rgba(10, 42, 94, 0.18);
 }
 
 /* Hover = light blue */
@@ -351,9 +401,33 @@ main {
   transform: translateY(-3px);
 }
 
+.external-icon {
+  font-size: 1rem;
+  margin-left: 6px;
+  color: #0a2a5e;
+  opacity:0;
+  transition: opacity 0.15s ease;
+}
+
+.resource-card:hover .external-icon {
+  opacity: 1;
+}
+
+.resource-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ✅ FIX */
+}
+
+.resource-meta-right {
+  display: flex;
+  align-items: flex-start; /* align badge + icon to top */
+  gap: 6px;
+}
+
 /* Card typography */
 .resource-card h2 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 1.1rem;
   margin: 0 0 0.5rem;
 }
@@ -364,6 +438,34 @@ main {
   line-height: 1.6;
   margin: 0;
   color: #1f2937;
+}
+
+.resource-card.recommended {
+  border: 2px solid #f5c542;
+  background: #fffdf5;
+}
+
+.recommended-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b8860b;
+  background: #fff4cc;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.resource-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resource-meta-left {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 /* Responsive: widen cards on smaller screens */
@@ -474,7 +576,7 @@ main {
 
 .resources-title {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(1rem, 1.8vw, 1.8rem);
+  font-size: clamp(1rem, 4vh, 3rem);
   font-weight: 700;
   color: #0a2a5e;
   margin: 0;
@@ -492,10 +594,15 @@ main {
 
 .filters {
   position: fixed;
-  top: 6rem;     /* aligns visually with first card */
+  top: calc(5rem + 2vh);
   right: 2rem;      /* sits in unused page margin */
   width: clamp(180px, 16vw, 240px);
   z-index: 1000;
+}
+
+.filters-left {
+  left: 2rem;
+  right: auto;   /* VERY important */
 }
 
 .filters-title {
@@ -517,14 +624,16 @@ main {
   text-align: left;
 
   padding: 0.9rem 1rem;   /* ⬆ increases button height */
-  min-height: 65px;       /* ⬆ guarantees large target */
+  min-height: clamp(48px, 10vh, 70px);       /* ⬆ guarantees large target */
 
   background: #ffffff;
-  border: 2px solid #0a2a5e;
+  border: 1.5px solid #0a2a5e;
   border-radius: 6px;
   color: #0a2a5e;
 
   font-size: 0.9rem;        /* optional: improves legibility */
+  box-shadow:
+    0 3px 0 rgba(10, 42, 94, 0.18);
 }
 
 .filter-btn:hover {
@@ -564,14 +673,14 @@ main {
   align-items: center;
   justify-content: center;
 
-  width: 100px;
-  height: 80px;
+  width: clamp(90px, 8vw, 140px);
+  height: clamp(70px, 7vw, 110px);
 
   font-family: "Archivo Black", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
 
   border-radius: 8px;
-  border: 3px solid #0a2a5e;
+  border: 1.5px solid #0a2a5e;
   background: #0a2a5e;
   color: #ffffff;
 
@@ -628,7 +737,7 @@ main {
 
 /* Card container */
 .question-card {
-  width: min(760px, 85%);
+  width: min(600px, 80%);
   text-align: center;
 }
 
@@ -641,18 +750,18 @@ main {
 
 .question-title {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(1.6rem, 2.4vw, 2.0rem);
+  font-size: clamp(1.6rem, 3vh, 2.5rem);
   font-weight: 650;
   color: #0a2a5e;
   margin: 0;
-  margin-top: 0.5rem;
+  margin-top: 3vh;
 }
 
 /* Button stack */
 .question-options {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 3.3vh;
   align-items: stretch;
 }
 
@@ -662,15 +771,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: clamp(20px, 1.8vw, 40px);
+  padding: clamp(20px, 1.8vh, 40px);
   min-height: clamp(50px, 8vh, 100px);
 
   background: #ffffff;
-  border: 2px solid #002d62;
+  border: 1.5px solid #002d62;
   border-radius: 9px;
 
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(1.3rem, 1.9vw, 1.7rem);
+  font-size: clamp(1.1rem, 1.4vh, 2rem);
   font-weight: 500;
   color: #0a2a5e;
   text-align: left;
@@ -747,7 +856,7 @@ main {
 
 .no-results {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   color: #0a2a5e;
 }
 
@@ -778,7 +887,7 @@ main {
   padding: 0.8rem 1.2rem;
   min-height: 65px;
 
-  border-width: 2px;
+  border-width: 1.5px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -835,13 +944,13 @@ main {
 
 /* Paragraph text: slightly larger & clearer */
 .accessibility-page p {
-  font-size: 20px; 
+  font-size: 1rem; 
   line-height: 1.6;
 }
 
 /* Lists: match paragraph size */
 .accessibility-page li {
-  font-size: 20px; 
+  font-size: 1rem; 
 }
 
 /* Nested bullets: tighter */

@@ -28,18 +28,17 @@
         ▲
         </button>
     </div>
-    <!-- Right: accessibility -->
-    <nav class="header-right">
+    <!-- Right: accessibility & home -->
+      <nav class="header-right">
         <a href="accessibility.html" class="access-link">
-        <img
-            src="assets/images/AI_EyeTracker.png"
-            alt=""
-            aria-hidden="true"
-            class="access-icon"
-        />
-        <span>ACCESSIBILITY / USING THIS SITE</span>
+          <img src="assets/images/AI_EyeTracker.png" alt="" aria-hidden="true" class="access-icon" />
+          <span>Using This Site</span>
         </a>
-    </nav>
+        <a href="index.html" class="access-link">
+           <img src="assets/images/AI_Home.png" alt="" aria-hidden="true" class="access-icon" />
+          <span>Home</span>
+        </a>
+      </nav>
   </div>
   </header>
     <button
@@ -52,9 +51,22 @@
     </button>
   <div class="header-spacer" aria-hidden="true"></div>
   <main>
+    <!-- LEFT: Media Type (dynamic) -->
     <aside class="filters filters-left">
 
+      <h2 class="filters-title">Filter by<br> Media Type</h2>
+
+      <div class="filter-options vertical" id="media-filters">
+      </div>
+
+    </aside>
+
+
+    <!-- RIGHT: Category (your original) -->
+    <aside class="filters">
+
       <h2 class="filters-title" id="filters-title"></h2>
+
       <div class="filter-options vertical" id="category-filters"></div>
 
     </aside>
@@ -77,7 +89,8 @@
   <footer class="site-footer">
   <p>
     This website is not an official Johns Hopkins University website and does not
-    represent institutional policy. © 2025.
+    represent institutional policy. © 2025. <br>Anonymous analytics are collected to improve the site. 
+    No personal information is collected.<a href="using-this-site.html">Learn more.</a>
   </p>
   </footer>
   <script src="assets/js/main.js"></script>

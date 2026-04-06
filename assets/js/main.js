@@ -2,37 +2,79 @@ const TOPIC_DISPLAY_MAP = {
   "How Palliative Care and Hospice are Different": "Palliative vs. Hospice",
   "Breathing Assistance Decisions": "Breathing",
   "Feeding Assistance Decisions": "Feeding",
-  "Benefits, Timing, and Who Provides It": "Benefits/Timing/Providers"
+  "Benefits, Timing, and Who Provides It": "Benefits, Timing & Providers"
   // add as many as you want
 };
 
 function getTopicLabel(topic) {
   return TOPIC_DISPLAY_MAP[topic] 
-    || topic.replace(/-/g, " ");
+    || topic.replace(/-/g, "-");
+}
+
+function getCardPositions() {
+  return Array.from(document.querySelectorAll(".resource-card"))
+    .map(card => ({
+      element: card,
+      top: card.getBoundingClientRect().top + window.scrollY
+    }))
+    .sort((a, b) => a.top - b.top);
+}
+
+function scrollToNextCard() {
+  const cards = getCardPositions();
+  const currentIndex = getCurrentCardIndex(cards);
+
+  const nextIndex = Math.min(currentIndex + 1, cards.length - 1);
+
+  cards[nextIndex].element.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function getCurrentCardIndex(cards) {
+  const viewportCenter = window.scrollY + window.innerHeight / 2;
+
+  let closestIndex = 0;
+  let smallestDistance = Infinity;
+
+  cards.forEach((card, index) => {
+    const rect = card.element.getBoundingClientRect();
+    const cardCenter = rect.top + window.scrollY + rect.height / 2;
+
+    const distance = Math.abs(cardCenter - viewportCenter);
+
+    if (distance < smallestDistance) {
+      smallestDistance = distance;
+      closestIndex = index;
+    }
+  });
+
+  return closestIndex;
+}
+
+function scrollToPrevCard() {
+  const cards = getCardPositions();
+  const currentIndex = getCurrentCardIndex(cards);
+
+  const prevIndex = Math.max(currentIndex - 1, 0);
+
+  cards[prevIndex].element.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollUpBtn = document.getElementById("scroll-up");
   const scrollDownBtn = document.getElementById("scroll-down");
 
-  const scrollAmount = () => window.innerHeight * 0.2;
-
   if (scrollUpBtn) {
-    scrollUpBtn.addEventListener("click", () => {
-      window.scrollBy({
-        top: -scrollAmount(),
-        behavior: "smooth"
-      });
-    });
+    scrollUpBtn.addEventListener("click", scrollToPrevCard);
   }
 
   if (scrollDownBtn) {
-    scrollDownBtn.addEventListener("click", () => {
-      window.scrollBy({
-        top: scrollAmount(),
-        behavior: "smooth"
-      });
-    });
+    scrollDownBtn.addEventListener("click", scrollToNextCard);
   }
 });
 
@@ -48,6 +90,7 @@ fetch("assets/data/resources.json")
   .then(resources => {
     const container = document.getElementById("resources-list");
     const filterContainer = document.getElementById("category-filters");
+    const mediaContainer = document.getElementById("media-filters");
 
     if (!container || !filterContainer) return;
 
@@ -62,7 +105,7 @@ fetch("assets/data/resources.json")
     if (filtersTitleEl) {
       if (filterMode === "topic" && flowAnswers?.category) {
         const categoryLabel = flowAnswers.category
-          .replace(/-/g, " ")
+          .replace(/-/g, "-")
           .replace(/\b\w/g, c => c.toUpperCase());
 
         filtersTitleEl.textContent = `Filter by ${categoryLabel} Subtopics`;
@@ -82,9 +125,8 @@ fetch("assets/data/resources.json")
     // ---- Role ----
     if (flowAnswers?.role) {
       const roleMap = {
-        patients: "Patients",
-        carepartners: "Care Partners",
-        clinicians: "Clinicians"
+        "patients&carepartners": "Patients & Care Partners",
+        "clinicians": "Clinicians"
       };
       parts.push(roleMap[flowAnswers.role]);
     }
@@ -93,13 +135,13 @@ fetch("assets/data/resources.json")
     if (flowAnswers?.category) {
       parts.push(
         flowAnswers.category
-          .replace(/-/g, " ")
+          .replace(/-/g, "-")
           .replace(/\b\w/g, c => c.toUpperCase())
       );
     } else if (activeCategory && activeCategory !== "all") {
       parts.push(
         activeCategory
-          .replace(/-/g, " ")
+          .replace(/-/g, "-")
           .replace(/\b\w/g, c => c.toUpperCase())
       );
     }
@@ -129,8 +171,8 @@ fetch("assets/data/resources.json")
 
     const sortedText =
       parts.length === 0
-        ? "Sorted alphabetically by title"
-        : "Filtered and sorted alphabetically by title";
+        ? "Expert recommendations are shown first, followed by all resources."
+        : "Expert recommendations are shown first, followed by filtered results.";
 
     subtitleEl.textContent = countText
       ? `${countText}. ${sortedText}`
@@ -149,6 +191,7 @@ fetch("assets/data/resources.json")
     const processedResources = dedupeResourcesByTitle(resources);
 
     let activeCategory = "all";
+    let activeMedia = "all";
 
     function dedupeResourcesByTitle(resourceList) {
       const map = new Map();
@@ -163,7 +206,10 @@ fetch("assets/data/resources.json")
             source: resource.source,
             type: resource.type,
             description: resource.description,   // ✅ FIX
-            users: resource.users || [],          // ✅ preserve for flow filters
+            recommended: resource["Recommend (Y/N)"] === "Y",
+            users: resource["users (patients&carepartners, providers)"]
+              ? [resource["users (patients&carepartners, providers)"]]
+              : [],          // ✅ preserve for flow filters
             language: resource.language || [],    // ✅ preserve for flow filters
             categories: [],
             topicsByCategory: {}
@@ -171,6 +217,9 @@ fetch("assets/data/resources.json")
         }
 
         const merged = map.get(key);
+        if (resource["Recommend (Y/N)"] === "Y") {
+          merged.recommended = true;
+        }
 
         // ---- Categories + topics ----
         if (Array.isArray(resource.category)) {
@@ -203,12 +252,22 @@ fetch("assets/data/resources.json")
       return resourceList.filter(resource => {
 
         /* Step 1 → role → users[] */
-        if (
-          flowAnswers.role &&
-          Array.isArray(resource.users) &&
-          !resource.users.includes(flowAnswers.role)
-        ) {
-          return false;
+        if (flowAnswers.role && Array.isArray(resource.users)) {
+          const match = resource.users.some(user => {
+            const normalized = user.toLowerCase();
+
+            if (flowAnswers.role === "patients&carepartners") {
+              return normalized.includes("patients&carepartners");
+            }
+
+            if (flowAnswers.role === "clinicians") {
+              return normalized.includes("providers");
+            }
+
+            return false;
+          });
+
+          if (!match) return false;
         }
 
         /* Step 2 → language → language[] */
@@ -242,6 +301,9 @@ fetch("assets/data/resources.json")
 
       resourceList.forEach(resource => {
         const card = document.createElement("a");
+        if (resource.recommended) {
+          card.classList.add("recommended");
+        }
 
         card.href = resource.url;
         card.className = "resource-card";
@@ -259,7 +321,7 @@ fetch("assets/data/resources.json")
           ${Object.entries(resource.topicsByCategory)
             .map(([category, topics]) => `
               <span class="resource-category-label">
-                ${category.replace(/-/g, " ")}:
+                ${category.replace(/-/g, "-")}:
               </span>
               ${topics.map(topic => `
                 <span class="resource-topic">
@@ -272,11 +334,21 @@ fetch("assets/data/resources.json")
 
         <div class="resource-divider"></div>
       `;
+      const badge = resource.recommended
+        ? `<span class="recommended-badge">★ Expert Recommended</span>`
+        : "";
 
       card.innerHTML = `
         <div class="resource-meta">
-          <span class="resource-source">${resource.source}</span>
-          <span class="resource-type">${resource.type}</span>
+          <div class="resource-meta-left">
+            <span class="resource-source">${resource.source}</span>
+            <span class="resource-type">${resource.type}</span>
+          </div>
+
+          <div class="resource-meta-right">
+            ${badge}
+            <span class="external-icon">↗</span>
+          </div>
         </div>
 
         ${topicsHtml}
@@ -296,28 +368,34 @@ fetch("assets/data/resources.json")
        Category filtering (respects flow)
     --------------------------------------------*/
     function renderFilteredResources() {
-      const baseList = baseFilteredResources; 
+      const baseList = baseFilteredResources;
 
       const filtered = baseList.filter(resource => {
-        // ---- Category filter ----
-        if (filterMode === "category" && activeCategory !== "all") {
-          return resource.categories.includes(activeCategory);
-        }
 
-        // ---- Topic filter ----
-        if (filterMode === "topic" && activeCategory !== "all") {
-          if (flowAnswers?.category) {
-            // Get Started: ONLY topics under selected category
-            const scopedTopics =
-              resource.topicsByCategory[flowAnswers.category] || [];
-            return scopedTopics.includes(activeCategory);
+        // ✅ CATEGORY FILTER (ALWAYS APPLIES)
+        if (activeCategory !== "all") {
+
+          if (filterMode === "category") {
+            if (!resource.categories.includes(activeCategory)) return false;
           }
 
-          // Normal view: ANY category match
-          return Object.values(resource.topicsByCategory)
-            .flat()
-            .includes(activeCategory);
+          if (filterMode === "topic") {
+            if (flowAnswers?.category) {
+              const scopedTopics =
+                resource.topicsByCategory[flowAnswers.category] || [];
+              if (!scopedTopics.includes(activeCategory)) return false;
+            } else {
+              const allTopics = Object.values(resource.topicsByCategory).flat();
+              if (!allTopics.includes(activeCategory)) return false;
+            }
+          }
         }
+
+      if (activeMedia !== "all") {
+        if (!resource.type || resource.type.toLowerCase() !== activeMedia) {
+          return false;
+        }
+      }
 
         return true;
       });
@@ -355,7 +433,12 @@ fetch("assets/data/resources.json")
       const filters = document.querySelector(".filters");
       if (filters) filters.style.display = "";
 
-      renderResources(filtered);
+      const recommended = filtered.filter(r => r.recommended);
+      const others = filtered.filter(r => !r.recommended);
+
+      const finalList = [...recommended, ...others];
+
+      renderResources(finalList);
       updateResourcesTitle(filtered.length);
     }
 
@@ -380,7 +463,7 @@ fetch("assets/data/resources.json")
       button.textContent =
         category === "all"
           ? "All"
-          : category.replace(/-/g, " ");
+          : getTopicLabel(category);
 
       if (category === "all") {
         button.classList.add("active");
@@ -389,7 +472,7 @@ fetch("assets/data/resources.json")
       button.addEventListener("click", () => {
         activeCategory = category;
 
-        document
+        filterContainer
           .querySelectorAll(".filter-btn")
           .forEach(btn => btn.classList.remove("active"));
 
@@ -399,6 +482,42 @@ fetch("assets/data/resources.json")
 
       filterContainer.appendChild(button);
     });
+
+    /* -------------------------------------------
+   Build media buttons (dynamic)
+    --------------------------------------------*/
+    if (mediaContainer) {
+      const mediaTypes = ["all", ...new Set(
+        processedResources.map(r => r.type?.toLowerCase()).filter(Boolean)
+      )];
+
+      mediaTypes.forEach(type => {
+        const button = document.createElement("button");
+        button.className = "filter-btn";
+
+        button.textContent =
+          type === "all"
+            ? "All"
+            : type.charAt(0).toUpperCase() + type.slice(1);
+
+        if (type === "all") button.classList.add("active");
+
+        button.addEventListener("click", () => {
+          activeMedia = type;
+
+          // ONLY reset media buttons
+          mediaContainer
+            .querySelectorAll(".filter-btn")
+            .forEach(btn => btn.classList.remove("active"));
+
+          button.classList.add("active");
+
+          renderFilteredResources();
+        });
+
+        mediaContainer.appendChild(button);
+      });
+    }
 
     /* -------------------------------------------
        Initial render
