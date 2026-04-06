@@ -16,8 +16,10 @@ df = pd.read_csv(GOOGLE_SHEET_CSV_URL)
 # Clean column names (VERY important)
 df.columns = df.columns.str.strip()
 
+df = df[df["Verified"].astype(str).str.strip().str.lower() == "yes"]
+
 # Columns that should become arrays
-ARRAY_COLUMNS = {"category", "topics", "users", "language"}
+ARRAY_COLUMNS = {"category", "topics", "users (patients&carepartners, providers)", "language"}
 
 # ==============================
 # NORMALIZATION MAPS
