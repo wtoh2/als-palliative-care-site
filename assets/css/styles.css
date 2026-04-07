@@ -727,6 +727,12 @@ main {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 600px) {
+  .back-text {
+    font-size: 1rem;   
+  }
+}
+
 .back-arrow {
   font-size: 1.4rem;
   line-height: 1;
@@ -887,7 +893,7 @@ main {
 
 @media (max-width: 600px) {
   .header-spacer {
-    height: 120px;
+    height: 140px;
   }
 }
 
