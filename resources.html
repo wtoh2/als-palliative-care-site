@@ -15,7 +15,7 @@
         <div class="header-left">
         <img
             src="assets/images/INPCS_Logo.png"
-            alt="INPCS Society ogo"
+            alt="INPCS Society logo"
             class="site-logo"
         />
         <span class="site-title">
@@ -24,7 +24,7 @@
     </div>
     <!-- CENTER: Scroll Up -->
     <div class="header-center">
-        <button class="scroll-btn" id="scroll-up" aria-label="Scroll up">
+        <button type="button" class="scroll-btn" id="scroll-up" aria-label="Scroll up">
         ▲
         </button>
     </div>
@@ -41,7 +41,8 @@
       </nav>
   </div>
   </header>
-    <button
+  <button
+    type="button"
     class="back-btn fixed-back"
     aria-label="Go back"
     onclick="history.back()"
@@ -52,22 +53,22 @@
   <div class="header-spacer" aria-hidden="true"></div>
   <main>
     <!-- LEFT: Media Type (dynamic) -->
-    <aside class="filters filters-left">
+    <aside class="filters filters-left" aria-labelledby="media-filters-title">
 
-      <h2 class="filters-title">Filter by<br> Media Type</h2>
+      <h2 class="filters-title" id="media-filters-title">Filter by<br> Media Type</h2>
 
-      <div class="filter-options vertical" id="media-filters">
+      <div class="filter-options vertical" id="media-filters" role="group" aria-label="Media type filters">
       </div>
 
     </aside>
 
 
     <!-- RIGHT: Category (your original) -->
-    <aside class="filters">
+    <aside class="filters" aria-labelledby="filters-title">
 
       <h2 class="filters-title" id="filters-title"></h2>
 
-      <div class="filter-options vertical" id="category-filters"></div>
+      <div class="filter-options vertical" id="category-filters" role="group" aria-label="Category filters">
 
     </aside>
 
@@ -78,11 +79,11 @@
           Sorted alphabetically by title
         </p>
       </header>
-      <div id="resources-list"></div>
+      <div id="resources-list" aria-live="polite"></div>
     </section>
 
     <!-- Scroll Down Button -->
-    <button class="scroll-btn fixed" id = "scroll-down" aria-label="Scroll down">
+    <button type="button" class="scroll-btn fixed" id="scroll-down" aria-label="Scroll down">
     ▼
     </button>
   </main>
@@ -90,7 +91,7 @@
   <p>
     This website is not an official Johns Hopkins University website and does not
     represent institutional policy. © 2025. <br>Anonymous analytics are collected to improve the site. 
-    No personal information is collected.<a href="accessibility.html#privacy">Learn more.</a>
+    No personal information is collected. <a href="accessibility.html#privacy">Learn more.</a>
   </p>
   </footer>
   <script src="assets/js/main.js"></script>

@@ -651,3 +651,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// ===== Prevent accidental double clicks =====
+const CLICK_LOCK_TIME = 600; // ms (tweak if needed)
+
+function lockElement(el) {
+  if (!el) return;
+
+  // prevent re-trigger
+  if (el.dataset.locked === "true") return;
+
+  el.dataset.locked = "true";
+
+  // visual + functional disable
+  el.style.pointerEvents = "none";
+  el.style.opacity = "0.7"; // optional feedback
+
+  setTimeout(() => {
+    el.style.pointerEvents = "";
+    el.style.opacity = "";
+    el.dataset.locked = "false";
+  }, CLICK_LOCK_TIME);
+}
+
+document.addEventListener("click", function (e) {
+  const target = e.target.closest(
+    "button, a, .resource-card, .filter-btn, .choice-btn, .hero-btn"
+  );
+
+  if (!target) return;
+
+  lockElement(target);
+});

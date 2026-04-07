@@ -45,13 +45,19 @@
 <main class="start-flow">
 
   <!-- Question 1 -->
-  <section class="question-card active" data-step="1">
+  <section class="question-card active" data-step="1" aria-live="polite">
     <header class="question-header">
       <h1 class="question-title">
         I am interested in resources for...
       </h1>
-      <div class="progress-container" aria-hidden="true">
-        <div class="progress-bar"></div>
+      <div class="progress-container">
+        <div 
+  class="progress-bar"
+  role="progressbar"
+  aria-valuemin="1"
+  aria-valuemax="3"
+  aria-valuenow="1"
+></div>
       </div>
     </header>
 
@@ -67,13 +73,19 @@
   </section>
   
   <!-- Question 2 -->
-  <section class="question-card" data-step="2" hidden>
+  <section class="question-card" data-step="2" hidden aria-hidden="true">
     <header class="question-header">
       <h1 class="question-title">
         I want resources in...
       </h1>
-      <div class="progress-container" aria-hidden="true">
-        <div class="progress-bar"></div>
+      <div class="progress-container">
+        <div 
+  class="progress-bar"
+  role="progressbar"
+  aria-valuemin="1"
+  aria-valuemax="3"
+  aria-valuenow="2"
+></div>
       </div>
     </header>
 
@@ -93,13 +105,19 @@
   </section>
 
   <!-- Question 3 -->
-  <section class="question-card" data-step="3" hidden>
+  <section class="question-card" data-step="3" hidden aria-hidden="true">
     <header class="question-header">
       <h1 class="question-title">
         I need help with understanding...
       </h1>
-      <div class="progress-container" aria-hidden="true">
-        <div class="progress-bar"></div>
+      <div class="progress-container">
+        <div 
+  class="progress-bar"
+  role="progressbar"
+  aria-valuemin="1"
+  aria-valuemax="3"
+  aria-valuenow="3"
+></div>
       </div>
     </header>
 
@@ -131,7 +149,7 @@
   <p>
     This website is not an official Johns Hopkins University website and does not
     represent institutional policy. © 2025. <br>Anonymous analytics are collected to improve the site. 
-    No personal information is collected.<a href="accessibility.html#privacy">Learn more.</a>
+    No personal information is collected. <a href="accessibility.html#privacy">Learn more.</a>
   </p>
   </footer>
 

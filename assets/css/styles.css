@@ -235,7 +235,7 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
+  min-height: 45px;
 
   font-family: "Archivo", sans-serif;
   font-size: 1.5rem;
@@ -412,6 +412,23 @@ main {
   transition: background-color 0.15s ease, transform 0.05s ease;
   box-shadow:
     0 3px 0 rgba(10, 42, 94, 0.18);
+}
+
+.resource-card {
+  position: relative;
+  z-index: 1;
+}
+
+/* Expand clickable area */
+.resource-card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+
+  z-index: -1;          /* 🔥 KEY FIX */
 }
 
 /* Hover = light blue */
@@ -799,7 +816,7 @@ main {
 .question-options {
   display: flex;
   flex-direction: column;
-  gap: 3.3vh;
+  gap: clamp(20px, 3.3vh, 40px);
   align-items: stretch;
 }
 
@@ -965,7 +982,7 @@ main {
   width: 70%;          /* responsive on large screens */
   margin-left: auto;
   margin-right: auto;
-  gap: 1rem; 
+  gap: 0.3rem; 
 }
 
 /* Reduce vertical spacing inside sections */
@@ -1254,4 +1271,45 @@ kbd {
     text-align: center;
   }
 
+}
+
+/* Expand clickable hit area for ALL buttons */
+button,
+a.hero-btn,
+a.access-link,
+.btn,
+.filter-btn,
+.choice-btn,
+.scroll-btn{
+  position: relative;
+}
+
+button::before,
+a.hero-btn::before,
+a.access-link::before,
+.btn::before,
+.filter-btn::before,
+.choice-btn::before,
+.scroll-btn::before{
+  content: "";
+  position: absolute;
+
+  /* 🔥 expands clickable area outward */
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+
+  /* keeps layout unchanged */
+  pointer-events: auto;
+}
+
+button,
+a.hero-btn,
+a.access-link,
+.btn,
+.filter-btn,
+.choice-btn,
+.scroll-btn{
+  z-index: 1;
 }
