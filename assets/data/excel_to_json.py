@@ -19,7 +19,7 @@ df.columns = df.columns.str.strip()
 df = df[df["Verified"].astype(str).str.strip().str.lower() == "yes"]
 
 # Columns that should become arrays
-ARRAY_COLUMNS = {"category", "topics", "users (patients&carepartners, providers)", "language"}
+ARRAY_COLUMNS = {"category", "topics", "language"}
 
 # ==============================
 # NORMALIZATION MAPS

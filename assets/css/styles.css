@@ -29,6 +29,26 @@ main {
 
 /* ===== Header ===== */
 
+@media (max-width: 600px) {
+
+  .header-inner {
+    flex-direction: column;   /* stack vertically */
+    align-items: stretch;
+    gap: 0.7rem;
+  }
+
+  .header-left {
+    justify-content: center;  /* center logo + title */
+  }
+
+  .header-right {
+    justify-content: center;  /* center buttons */
+    gap: 0.8rem;
+    flex-wrap: wrap;          /* allows wrapping if needed */
+  }
+
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -603,6 +623,7 @@ main {
 
 /* ===== Category Filters (Fixed Left Rail – NO SQUISHING) ===== */
 
+
 .filters {
   position: fixed;
   top: calc(5rem + 2vh);
@@ -862,6 +883,12 @@ main {
 .header-spacer {
   height: 80px;   /* match header height */
   flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .header-spacer {
+    height: 120px;
+  }
 }
 
 
@@ -1204,4 +1231,21 @@ kbd {
   color: #1b78ea;        /* same blue you use elsewhere */
   font-weight: 700;
   white-space: nowrap;  /* prevents awkward line breaks */
+}
+
+@media (max-width: 1100px) {
+
+  .filter-options.vertical {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .filter-btn {
+    width: auto !important;
+    min-width: 140px;
+    text-align: center;
+  }
+
 }
