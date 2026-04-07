@@ -157,9 +157,32 @@ main {
   padding-right: 3.5rem;
 
   display: grid;
-  grid-template-columns: minmax(40rem, 2.8fr) 1fr;
+  grid-template-columns: minmax(0rem, 2.8fr) 1fr;
   align-items: center;
   gap: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title-outline {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero p a {
@@ -296,6 +319,26 @@ main {
 
   .hero-visual img {
     max-height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-right {
+    flex-wrap: nowrap;   /* 🔥 prevent line breaks */
+  }
+}
+
+@media (max-width: 600px) {
+  .header-right a {
+    font-size: 0.85rem;      /* smaller text */
+    padding: 0.25rem 0.5rem; /* tighter padding */
+    min-height: 40px;        /* reduce height */
+  }
+}
+
+@media (max-width: 600px) {
+  .header-right {
+    gap: 0.4rem;  /* was 0.8rem+ */
   }
 }
 
