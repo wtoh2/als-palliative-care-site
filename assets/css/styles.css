@@ -241,8 +241,8 @@ main {
 }
 
 .hero p .emphasis {
-  font-weight: 600;
-  color: #1b78ea;
+  font-weight: 800;
+  color: #0a2a5e;
 }
 
 /* CTA button */
@@ -1356,3 +1356,4 @@ a.access-link,
 .scroll-btn{
   z-index: 1;
 }
+
