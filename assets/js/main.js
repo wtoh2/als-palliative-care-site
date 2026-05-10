@@ -1,3 +1,11 @@
+function trackEvent(eventName, props = {}) {
+  if (window.plausible) {
+    window.plausible(eventName, {
+      props: props
+    });
+  }
+}
+
 const TOPIC_DISPLAY_MAP = {
   "How Palliative Care and Hospice are Different": "Palliative vs. Hospice",
   "Breathing Assistance Decisions": "Breathing",
@@ -359,7 +367,15 @@ fetch("assets/data/resources.json")
           ${resource.description}
         </p>
       `;
+        card.addEventListener("click", () => {
+          trackEvent("Resource Clicked", {
+            title: resource.title,
+            source: resource.source,
+            type: resource.type,
+            recommended: resource.recommended ? "yes" : "no"
+          });
 
+        });
         container.appendChild(card);
       });
     }
@@ -470,6 +486,9 @@ fetch("assets/data/resources.json")
       }
 
       button.addEventListener("click", () => {
+        trackEvent("Category Filter Used", {
+          category: category
+        });
         activeCategory = category;
 
         filterContainer
@@ -503,6 +522,9 @@ fetch("assets/data/resources.json")
         if (type === "all") button.classList.add("active");
 
         button.addEventListener("click", () => {
+          trackEvent("Media Filter Used", {
+            media_type: type
+          });
           activeMedia = type;
 
           // ONLY reset media buttons
@@ -553,6 +575,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const step = Number(card.dataset.step);
       const answer = btn.dataset.answer;
 
+      trackEvent("Flow Question Answered", {
+        step: step,
+        answer: answer
+      });
+
       if (step === 1) answers.role = answer;
       if (step === 2) answers.language = answer;
       if (step === 3) answers.category = answer;
@@ -568,12 +595,19 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (!next) {
+
+      trackEvent("Flow Completed", {
+        role: answers.role,
+        language: answers.language,
+        category: answers.category
+      });
+
       sessionStorage.setItem(
         "getStartedAnswers",
         JSON.stringify(answers)
       );
 
-      window.location.href = "resources.html"; // adjust if needed
+      window.location.href = "resources.html";
       return;
     }
 
