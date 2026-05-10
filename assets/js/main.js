@@ -372,9 +372,13 @@ fetch("assets/data/resources.json")
             title: resource.title,
             source: resource.source,
             type: resource.type,
-            recommended: resource.recommended ? "yes" : "no"
+            url: resource.url,
+            recommended: resource.recommended ? "yes" : "no",
+            categories: resource.categories.join(", "),
+            topics: Object.values(resource.topicsByCategory)
+              .flat()
+              .join(", ")
           });
-
         });
         container.appendChild(card);
       });
@@ -681,6 +685,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (fullResourcesLink) {
     fullResourcesLink.addEventListener("click", () => {
+      trackEvent("Full Resource List Opened");
       sessionStorage.removeItem("getStartedAnswers");
     });
   }
