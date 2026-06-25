@@ -1,5 +1,28 @@
 [
   {
+    "Timestamp": "6/24/2026 19:26:53",
+    "title": "ASK ME Webinar: Living Fully, Living Well--Palliative Care for ALS",
+    "description": "Recorded webinar about palliative care and its benefits.",
+    "source": "ALS Network",
+    "type": "Video",
+    "category": [
+      "Palliative Care"
+    ],
+    "language": [
+      "en"
+    ],
+    "url": "https://www.youtube.com/watch?v=CtCFXrSruHc",
+    "users (patients&carepartners, providers)": "patients&carepartners, providers",
+    "submitter's email": "sgoclowski@alsnetwork.org",
+    "additional info": "Please replace the video from five years ago, currently listed in the resource page on Palliative Care with this one that we produced in May 2026. Thank you!.",
+    "topics": [
+      "Definition",
+      "Benefits, Timing, and Who Provides It"
+    ],
+    "Recommend (Y/N)": "Y",
+    "Verified": "Yes"
+  },
+  {
     "Timestamp": "",
     "title": "10 cosas que debe saber: Comprender los cuidados paliativos [Spanish]",
     "description": "Folleto imprimible que describe 10 datos y consejos sobre cuidados paliativos para personas con ELA y sus familias.",
@@ -312,51 +335,6 @@
     "additional info": "",
     "topics": [
       "Breathing Assistance Decisions"
-    ],
-    "Recommend (Y/N)": "N",
-    "Verified": "Yes"
-  },
-  {
-    "Timestamp": "",
-    "title": "ASK ME: ALS and Palliative Care webinar",
-    "description": "Youtube webinar that covers the topics of: palliative care definition, advance care planning, advance directives, how palliative care is different from hospice, and available resources.",
-    "source": "ALS Network",
-    "type": "Video",
-    "category": [
-      "Advance Care Planning"
-    ],
-    "language": [
-      "en"
-    ],
-    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc",
-    "users (patients&carepartners, providers)": "patients&carepartners",
-    "submitter's email": "",
-    "additional info": "",
-    "topics": [
-      "Advance Directives"
-    ],
-    "Recommend (Y/N)": "N",
-    "Verified": "Yes"
-  },
-  {
-    "Timestamp": "",
-    "title": "ASK ME: ALS and Palliative Care webinar",
-    "description": "Youtube webinar that covers the topics of: palliative care definition, advance care planning, advance directives, how palliative care is different from hospice, and available resources.",
-    "source": "ALS Network",
-    "type": "Video",
-    "category": [
-      "Palliative Care"
-    ],
-    "language": [
-      "en"
-    ],
-    "url": "https://www.youtube.com/watch?v=A5UJnq1FOyc",
-    "users (patients&carepartners, providers)": "patients&carepartners",
-    "submitter's email": "",
-    "additional info": "",
-    "topics": [
-      "Definition",
-      "Benefits, Timing, and Who Provides It"
     ],
     "Recommend (Y/N)": "N",
     "Verified": "Yes"
